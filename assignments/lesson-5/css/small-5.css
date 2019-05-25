@@ -43,9 +43,9 @@ nav ul {
 }
 
 nav ul li a {
-    padding: .5rem;
+    padding: .25rem;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
     color: #000;
