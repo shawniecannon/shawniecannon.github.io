@@ -15,6 +15,7 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     font-family: 'Abril Fatface', Arial, cursive;
+    text-align: center;
 }
 
 header {
@@ -55,11 +56,11 @@ nav a:hover {
     background-color: #bbb;
     color: lime;
 }
-.active {
+.point a:active {
     background: black;
     color: white;
 }
 
-main {
-    text-align: center:
+section, aside, footer {
+    text-align: center;
 }
