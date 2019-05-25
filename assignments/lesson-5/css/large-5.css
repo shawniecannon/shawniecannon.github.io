@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5 em) {
+@media only screen and (min-width: 32.5em) {
 
     header img {
         width: 150px;
@@ -20,6 +20,26 @@
         display: inline-block;
         margin-right: 1rem;
     }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(74, 52, 151);
+      }
+      
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      nav li a:hover {
+        background-color: purple;
+      }
 
 
 
