@@ -25,7 +25,7 @@ header {
     text-align: center;
 }
 
-header img, .headings {
+header img .headings {
     display: inline-block;
     vertical-align: middle;
     margin: 10px;
