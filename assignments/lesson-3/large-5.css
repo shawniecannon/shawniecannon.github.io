@@ -12,14 +12,15 @@
         margin-left: 4rem;
     }
 
-    nav li:first-child { 
+    nav li:first-child {
         display: none;
     }
-    nav li { 
+
+    nav li {
         display: inline-block;
         margin-right: 1rem;
-    }	
-	
+    }
+
 
 
 
