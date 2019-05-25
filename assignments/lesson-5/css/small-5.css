@@ -19,9 +19,9 @@ h2, h3, h4, h5, h6 {
 
 header {
     margin: 10px auto;
-    background-color: #ffffff;
-    border: 1px solid #bbbbbb
-    box-shadow: 0 0 30px #77777;
+    background-color: #e2abab;
+    border: 1px solid #e01e1e
+    box-shadow: 0 0 30px gray;
     text-align: center;
 }
 
