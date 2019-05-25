@@ -1,0 +1,61 @@
+/* main css custom file */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+    background-color: #bbb;
+
+}
+
+h1 {
+    font-family: 'Pacifico', Arial, cursive;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', Arial, cursive;
+}
+
+header {
+    margin: 10px auto;
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb
+    box-shadow: 0 0 30px #77777;
+    text-align: center;
+}
+
+header img, .headings {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+nav {
+    background: #33DBDB ;
+    text-align: center;
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    padding: .5rem;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Righteous', Arial, bold;
+}
+
+nav a:hover {
+    background-color: #bbb;
+    color: lime;
+}
+.active {
+    background: black;
+    color: white;
+}

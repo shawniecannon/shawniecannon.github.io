@@ -1,0 +1,30 @@
+@media only screen and (min-width: 32.5 em) {
+
+    header img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .headings {
+        margin-left: 4rem;
+    }
+
+    nav li:first-child { 
+        display: none;
+    }
+    nav li { 
+        display: inline-block;
+        margin-right: 1rem;
+    }	
+	
+
+
+
+
+
+
+
+}
