@@ -165,7 +165,7 @@ th {
     height: auto;
     border: 3px #7390d1;
 }
- p {
+ aside p {
      margin: 5px;
      text-align: center;
  }
@@ -177,7 +177,7 @@ aside {
     width: 100%;
     margin: 5px auto;
     background-color: #b8bd96;
-    border: 5px solid #83941e;
+    border: 5px solid #d2a728;
     text-align: center;
     font-weight: bold;
 }
@@ -187,9 +187,9 @@ footer {
     padding: 10px;
     margin: 5px auto;
     background-color: #83941e;
-    border: 1px solid black
+    border: 2px solid black
     text-align: center;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 }
