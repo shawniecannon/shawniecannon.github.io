@@ -3,44 +3,69 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-size: 16px;
-    background-color: #bbb;
+    background-color: ghostwhite;
 
 }
 
 h1 {
     font-family: 'Pacifico', Arial, cursive;
+    color: ghostwhite;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 2px 2px black;
+    text-align: center:
+
 }
 
-h2, h3, h4, h5, h6 {
+
+h3 {
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+}
+
+h2, 
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Abril Fatface', Arial, cursive;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 header {
-    margin: 10px auto;
-    background-color: #e2abab;
-    border: 1px solid #e01e1e
-    box-shadow: 0 0 30px gray;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #83941e;
+    border: 2px solid black; 
+    box-shadow: 0 0 15px grey;
     text-align: center;
+    display: flex;
+    
 }
 
 header img .headings {
     display: inline-block;
     vertical-align: middle;
-    margin: 10px;
+    margin: 20px;
+
+}
+
+.motto {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 nav {
-    background: #33DBDB ;
+    background: #7390d1;
     text-align: center;
 
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav li {
+    display: block;
 }
+
 
 nav ul li a {
     padding: .25rem;
@@ -48,19 +73,123 @@ nav ul li a {
     font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: ghostwhite;
     font-family: 'Righteous', Arial, bold;
 }
 
 nav a:hover {
-    background-color: #bbb;
-    color: lime;
+    background-color: #83941e;
+    color: #cef4ee;
 }
+
+.point {
+    list-style-type: none;
+    padding: 0;
+}
+
 .point a:active {
     background: black;
     color: white;
 }
+}
+.both {
+    margin: 5px auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.intro {
+    position: relative;
+    margin: 5px auto;
+    background-color: #eeeeee;
+    border: 1px solid #333;
+    width: 98%;
+    height: auto;
 
-section, aside, footer {
+}
+.weather-summary {
+position: absolute;
+top: 20px;
+left: 30px;
+background-color: #83941e;
+opacity: 0.88;
+color: #eeeeee;
+text-align: center;
+
+.wstext {
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+}
+
+}
+.intro img {
+    width:100%;
+    height: auto;
+}
+
+.table {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.point li:first-child {
+    display: block;
+}
+tablem th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+    
+}
+td img {
+    max-width: 95px;
+}
+
+th {
+    background-color: #d2a728;
+    color: black;
+}
+
+.article {
+    width: 100%;
+    margin: 5px auto;
+    background-color: #c8d8fc;
+    border: 2px solid black;
     text-align: center;
+    font-weight: bold;
+}
+
+.article img {
+    width: 75%;
+    height: auto;
+    border: 3px #7390d1;
+}
+ p {
+     margin: 5px;
+     text-align: center;
+ }
+footer {
+    text-align: center;
+}
+
+aside {
+    width: 100%;
+    margin: 5px auto;
+    background-color: #b8bd96;
+    border: 5px solid #83941e;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    background-color: #83941e;
+    border: 1px solid black
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
 }

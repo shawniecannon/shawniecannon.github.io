@@ -11,12 +11,22 @@
     .headings {
         margin-left: 4rem;
     }
+    nav {
+        display: inline-block;
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #7390d1;
+        text-align: center;
+        box-shadow: 0px 2px 2px lightgray;
+        padding: 0;
+        overflow: hidden;
+    }
 
-    nav li:first-child {
+    .point li:first-child {
         display: none;
     }
 
-    nav li {
+    .point li {
         display: inline-block;
         margin-right: 1rem;
     }
@@ -26,7 +36,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: lightgrey;
+        background-color: #7390d1;
       }
       
       nav li a {
@@ -38,10 +48,13 @@
       }
       
       nav li a:hover {
-        background-color: purple;
+        background-color: #83941e;
       }
 
-
+.table {
+    display: inline-block;
+    margin: auto;
+}
 
 
 
