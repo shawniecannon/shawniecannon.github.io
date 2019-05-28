@@ -34,13 +34,15 @@ h6 {
 }
 
 header {
+
     width: 100%;
     margin: 20px auto;
     background-color: #83941e;
-    border: 2px solid black; 
     box-shadow: 0 0 15px grey;
     text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -49,6 +51,11 @@ header img .headings {
     vertical-align: middle;
     margin: 20px;
 
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
 }
 
 .motto {
@@ -60,6 +67,7 @@ header img .headings {
 nav {
     background: #7390d1;
     text-align: center;
+    width: 100%;
 
 }
 nav li {
@@ -115,6 +123,9 @@ background-color: #83941e;
 opacity: 0.88;
 color: #eeeeee;
 text-align: center;
+padding: 7px;
+width: 250px;
+}
 
 .wstext {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
@@ -129,21 +140,23 @@ text-align: center;
 .table {
     display: none;
     position: relative;
-    margin: 0 auto;
+    margin: auto;
     
 }
 
 .point li:first-child {
     display: block;
 }
-tablem th, td {
+table th, td {
     border: 2px solid black;
     border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
 
     
 }
 td img {
-    max-width: 95px;
+    max-width: 75px;
 }
 
 th {
@@ -163,33 +176,35 @@ th {
 .article img {
     width: 75%;
     height: auto;
-    border: 3px #7390d1;
+    padding: 5px;
 }
  aside p {
      margin: 5px;
      text-align: center;
- }
-footer {
-    text-align: center;
-}
+     padding: 10px;
+
 
 aside {
-    width: 100%;
     margin: 5px auto;
     background-color: #b8bd96;
-    border: 5px solid #d2a728;
     text-align: center;
+    clear: both;
     font-weight: bold;
+    width: 100%;
 }
 
 footer {
-    width: 100%;
     padding: 10px;
     margin: 5px auto;
     background-color: #83941e;
-    border: 2px solid black
     text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
+    width: 100%;
 }
+footer img {
+    margin: auto;
+
+}
+
 }

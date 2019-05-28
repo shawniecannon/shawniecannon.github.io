@@ -12,14 +12,9 @@
         margin-left: 4rem;
     }
     nav {
-        display: inline-block;
-        max-width: 960px;
-        margin: 0 auto;
-        background-color: #7390d1;
         text-align: center;
+        background-color: #7390d1;
         box-shadow: 0px 2px 2px lightgray;
-        padding: 0;
-        overflow: hidden;
     }
 
     .point li:first-child {
@@ -52,11 +47,17 @@
       }
 
 .table {
-    display: inline-block;
+    display: block;
     margin: auto;
+    text-align: center;
+
 }
+.article img {
+    width: 275px;
+    height: auto;
+    float: right;
 
-
+}
 
 
 
