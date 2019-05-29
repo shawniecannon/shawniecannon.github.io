@@ -46,20 +46,23 @@
         background-color: #83941e;
       }
 
+      table {
+          margin: 5px auto;
+      }
+
 .table {
     display: block;
-    margin: auto;
-    text-align: center;
 
 }
 .article img {
     width: 275px;
-    height: auto;
     float: right;
 
 }
 
-
+aside, footer {
+    max-width: 960px;
+}
 
 
 }

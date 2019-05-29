@@ -117,23 +117,25 @@ nav a:hover {
 }
 .weather-summary {
 position: absolute;
-top: 20px;
+top: 10px;
 left: 30px;
 background-color: #83941e;
-opacity: 0.88;
+opacity: 0.84;
 color: #eeeeee;
 text-align: center;
 padding: 7px;
-width: 250px;
+width: 210px;
+clear: both;
 }
 
 .wstext {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
 }
-
-}
+ .both img {
+     width: 100%
+ }
 .intro img {
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -164,47 +166,51 @@ th {
     color: black;
 }
 
+article {
+    margin: 10px 0 0 0;
+}
+
 .article {
     width: 100%;
     margin: 5px auto;
     background-color: #c8d8fc;
-    border: 2px solid black;
     text-align: center;
     font-weight: bold;
 }
 
 .article img {
-    width: 75%;
+    width: 100%;
     height: auto;
     padding: 5px;
 }
  aside p {
      margin: 5px;
-     text-align: center;
-     padding: 10px;
+     text-align: left
+     padding: 20px;
+ }
 
-
-aside {
-    margin: 5px auto;
+    aside {
+        width: 100%;
+        margin: 5px auto;
     background-color: #b8bd96;
     text-align: center;
     clear: both;
     font-weight: bold;
     width: 100%;
+    padding; 15px;
+}
+
+aside img {
+    padding: 5px 0 5px 0;
 }
 
 footer {
-    padding: 10px;
     margin: 5px auto;
     background-color: #83941e;
     text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
-    width: 100%;
-}
-footer img {
-    margin: auto;
-
+    width: 95%;
 }
 
 }
