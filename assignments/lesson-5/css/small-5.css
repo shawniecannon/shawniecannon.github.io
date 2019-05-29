@@ -34,9 +34,7 @@ h6 {
 }
 
 header {
-
-    width: 100%;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: #83941e;
     box-shadow: 0 0 15px grey;
     text-align: center;
@@ -44,14 +42,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-header img .headings {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px;
-
+header img {
+    
 }
 
 main {
