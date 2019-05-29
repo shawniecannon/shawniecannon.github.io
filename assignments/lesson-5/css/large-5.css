@@ -54,12 +54,18 @@
     display: block;
 
 }
+article {
+    overflow: hidden;
+}
+
 .article img {
     width: 275px;
     float: right;
 
 }
-
+article figure {
+    float: right;
+}
 aside, footer {
     max-width: 960px;
 }

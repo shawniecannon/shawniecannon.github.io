@@ -165,6 +165,8 @@ th {
 article {
     margin: 10px 0 0 0;
     width: 100%;
+    height: 200px;
+    overflow: scroll;
 }
 
 .article {
@@ -181,6 +183,18 @@ article {
     height: auto;
     padding: 5px;
 }
+.headline {
+    text-align: left;
+}
+figure {
+    float: right;
+}
+figure figcaption {
+    text-align: center;
+}
+
+)
+
  aside p {
      margin: 5px;
      text-align: left
@@ -196,6 +210,7 @@ article {
     font-weight: bold;
     width: 100%;
     padding; 15px;
+
 }
 
 aside img {
