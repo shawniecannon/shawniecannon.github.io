@@ -40,6 +40,7 @@ header {
     background-color: #83941e;
     box-shadow: 0 0 15px grey;
     text-align: center;
+    letter-spacing: .10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +84,7 @@ nav ul li a {
     text-decoration: none;
     color: ghostwhite;
     font-family: 'Righteous', Arial, bold;
+    letter-spacing: .10rem;
 }
 
 nav a:hover {
