@@ -1,0 +1,75 @@
+@media only screen and (min-width: 32.5em) {
+
+    header img {
+        width: 10rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .headings {
+        margin-left: 4rem;
+    }
+
+    nav {
+        text-align: center;
+        background-color: #7390d1;
+        box-shadow: 0px 2px 2px lightgray;
+    }
+
+    .point li:first-child {
+        display: none;
+    }
+
+    .point li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #7390d1;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #83941e;
+    }
+
+    table {
+        margin: 5px auto;
+    }
+
+    .table {
+        display: block;
+
+    }
+
+    .article img {
+        width: 275px;
+        float: right;
+
+    }
+
+    article figure {
+        float: right;
+    }
+
+    aside,
+    footer {
+        max-width: 960px;
+    }
+
+
+}
