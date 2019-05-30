@@ -11,6 +11,7 @@
     .headings {
         margin-left: 4rem;
     }
+
     nav {
         text-align: center;
         background-color: #7390d1;
@@ -32,43 +33,43 @@
         padding: 0;
         overflow: hidden;
         background-color: #7390d1;
-      }
-      
-      nav li a {
+    }
+
+    nav li a {
         display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-      }
-      
-      nav li a:hover {
+    }
+
+    nav li a:hover {
         background-color: #83941e;
-      }
+    }
 
-      table {
-          margin: 5px auto;
-      }
+    table {
+        margin: 5px auto;
+    }
 
-.table {
-    display: block;
+    .table {
+        display: block;
 
-}
-article {
-    overflow: hidden;
-}
+    }
 
-.article img {
-    width: 275px;
-    float: right;
+    .article img {
+        width: 275px;
+        float: right;
 
-}
-article figure {
-    float: right;
-}
-aside, footer {
-    max-width: 960px;
-}
+    }
+
+    article figure {
+        float: right;
+    }
+
+    aside,
+    footer {
+        max-width: 960px;
+    }
 
 
 }

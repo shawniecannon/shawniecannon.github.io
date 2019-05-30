@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Climte Clues & News for Preston, ID</title>
     <meta name="description" content="The Climate Clues site keeps you on top of weather and Preston, ID town news.">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Pacifico|Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-5.css">
     <link rel="stylesheet" href="css/large-5.css">
+    <script src="js/script-main.js"></script>
 
 
 </head>
@@ -19,14 +21,14 @@
         <img src="images/stormicon.png" alt="stormy weather icon">
         <div class="headings">
             <h1>Climate Clues</h1>
-            <div class="motto">News & Weather Now
+            <div class="motto">Weather News Now
             </div>
         </div>
 
     </header>
     <nav>
         <ul class="point">
-            <li><a href="#" class="current">&#9776; Menu</a></li>
+            <li class="active"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Today</a></li>
             <li><a href="#">Weekend</a></li>
             <li><a href="#">7-Day View</a></li>
@@ -39,19 +41,22 @@
     </nav>
 
     <main>
-        <h2>Preston, ID</h2>
-        <div class="both">
-            <div class="intro">
-                <img src="images/town.jpg" alt="random picture from pexels.com">
-                <section class="weather-summary">
-                    <h3 class="wstext">Weather Summary</h3>
-                    <p>Currently: Overcast</p>
-                    <p>High: 77&deg;F</p>
-                    <p>Wind Chill: 69&deg;F</p>
-                    <p>Humidity: 32%</p>
-                    <p>Wind Speed: 10 mph</p>
-                </section>
-            </div>
+        <h2>Preston, Idaho</h2>
+        <div class="intro">
+            <figure>
+                <img src="images/townoriginal.jpg" alt="random picture from pexels.com" sizes="100vw" srcset="images/town400px.jpg 200w,
+                images/town800px.jpg 800w">
+            </figure>
+            
+            <section class="weather-summary">
+                <h3 class="wstext">Weather Summary</h3>
+                <p>Currently: Overcast</p>
+                <p>High: 77&deg;F</p>
+                <p>Wind Chill: 69&deg;F</p>
+                <p>Humidity: 32%</p>
+                <p>Wind Speed: 10 mph</p>
+            </section>
+        
         </div>
         <section class="table">
             <h4>5-Day Forcast</h4>
@@ -77,14 +82,14 @@
             </table>
 
         </section>
-        <section class="article">
-            <figure>
-            <img src="images/people.jpg" alt="random picture from pexels.com">
-            <figcaption>Enjoy the outdoors with friends!</figcaption>
-        </figure>
+        <section class="article" title="News">
             <article>
-                <h4 class="headline">Outdoor News</h4>
-                <bytag>by Shawnie Cannon</bytag>
+                    <h4 class="headline">Outdoor News</h4>
+                <div class="bytag">by Shawnie Cannon</div>
+                <figure>
+                    <img src="images/people.jpg" alt="random picture from pexels.com">
+                    <figcaption>Enjoy the outdoors with friends!</figcaption>
+                </figure>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -97,14 +102,14 @@
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
             </article>
-            <img src="" alt="">
         </section>
 
     </main>
 
     <aside>
-       
+
         <p class="contact">Contact Info
             <br>&#9742; 555-567-8900
             <br>&#9993; shawniecannon@gmail.com<br>
