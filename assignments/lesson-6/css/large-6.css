@@ -64,11 +64,3 @@
     article figure {
         float: right;
     }
-
-    aside,
-    footer {
-        max-width: 960px;
-    }
-
-
-}

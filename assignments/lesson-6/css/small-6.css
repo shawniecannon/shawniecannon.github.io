@@ -238,9 +238,11 @@ aside img {
 }
 
 .contact {
+    color: #485210
     margin 1px 0 0 0;
     font-size: 1.1rem;
     padding: 5px;
+
 }
 
 aside.contact {
