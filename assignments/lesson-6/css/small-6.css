@@ -132,7 +132,7 @@ position: absolute;
 top: 10px;
 left: 30px;
 background-color: #83941e;
-color: #fff;
+color: #000;
 text-align: center;
 font-size: .8rem;
 padding: 7px;
@@ -145,6 +145,7 @@ clear: both;
 .wstext {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
     font-weight: .8rem;
+
 }
  .both img {
      width: 100%
