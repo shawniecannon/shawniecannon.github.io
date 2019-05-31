@@ -110,6 +110,9 @@ display: block;
     display: none;
 }
 
+.responsive li {
+    display: block;
+}
 
 .point a:active {
     background: black;

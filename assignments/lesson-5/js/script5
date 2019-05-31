@@ -1,4 +1,3 @@
 function toggleMenu() {
-    document.getElementByClassName("point")
-    [0].classlist.toggle('active');
+    document.getElementByClassName('point')[0].classlist.toggle('active');
 }
