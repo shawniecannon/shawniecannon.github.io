@@ -58,9 +58,5 @@
     .article img {
         width: 275px;
         float: right;
-
     }
-
-    article figure {
-        float: right;
-    }
+}

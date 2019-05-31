@@ -96,17 +96,16 @@ nav ul li a {
 
 
     nav a:hover {
-        background-color: rgba(0,0,0,0.4))
+        background-color: rgba(0,0,0,0.4);
         color: #cef4ee;
     }
-}
 nav ul li.active a {
     background-color: rgba(0,0,0,0.2);
 }
 
 
 nav a:hover {
-    background-color: rgba(0,0,0,0.4))
+    background-color: rgba(0,0,0,0.4);
     color: #cef4ee;
 }
 
@@ -238,9 +237,9 @@ aside img {
 }
 
 .contact {
-    color: #485210
-    margin 1px 0 0 0;
-    font-size: 1.1rem;
+    color: #485210;
+    margin: 1px 0 0 0;
+    font-size: 0.9rem;
     padding: 5px;
 
 }
@@ -258,9 +257,8 @@ footer {
     margin: 0;
     background-color: #83941e;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 100%;
     color: #fff;
-}
-
+    padding: 3px;
 }
