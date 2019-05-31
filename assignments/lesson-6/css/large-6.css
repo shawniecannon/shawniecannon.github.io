@@ -35,14 +35,7 @@
         background-color: #7390d1;
     }
 
-    nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
+   
     nav li a:hover {
         background-color: #83941e;
     }
@@ -54,6 +47,12 @@
     .table {
         display: block;
 
+    }
+
+    .forecast {
+        font-family: 'Righteous', Arial, cursive;
+        font-size: 1.2rem;
+        letter-spacing: .05rem;
     }
 
     .article img {

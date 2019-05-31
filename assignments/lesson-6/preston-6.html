@@ -18,16 +18,16 @@
 <body>
     <header>
         <img src="images/stormicon.png" alt="stormy weather icon">
-        
+
         <div class="headings">
-                <h1>Climate Clues</h1>
-                <div class="motto">Weather News Now</div>
+            <h1>Climate Clues</h1>
+            <div class="motto">Weather News Now</div>
         </div>
 
     </header>
     <nav>
         <ul class="point">
-            <li class="active"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Today</a></li>
             <li><a href="#">Weekend</a></li>
             <li><a href="#">7-Day View</a></li>
@@ -47,7 +47,8 @@
                 images/herosmall.jpg 200w,
                 images/herolarge.jpg 700w">
             </figure>
-            
+
+
             <section class="weather-summary">
                 <h3 class="wstext">Weather Summary</h3>
                 <p>Currently: Overcast</p>
@@ -56,10 +57,10 @@
                 <p>Humidity: 32%</p>
                 <p>Wind Speed: 10 mph</p>
             </section>
-        
+
         </div>
         <section class="table">
-            <h4>5-Day Forcast</h4>
+            <h4 class="forecast">5-Day Forecast</h4>
             <table>
                 <thead>
                     <tr>
@@ -84,14 +85,14 @@
         </section>
         <section class="article" title="News">
             <article>
-                    <h4 class="headline">Outdoor News</h4>
+                <h4 class="headline">Outdoor News</h4>
+                <div class="bytag">by Shawnie Cannon</div><br>
                 <figure>
                     <img src="images/people.jpg" alt="random picture from pexels.com">
                     <figcaption>Enjoy the outdoors with friends!</figcaption>
                 </figure>
-                
-                <p><div class="bytag">by Shawnie Cannon</div><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
@@ -109,23 +110,26 @@
 
     </main>
 
-    <aside>
-
-        <p class="contact">Contact Info
-            <br>&#9742; 555-567-8900
-            <br>&#9993; shawniecannon@gmail.com<br>
-            <img src="images/map.png" alt="map of salt lake city"><br>
-            Contact us on social media!
-        </p>
-        <img src="images/sm.jpg" alt="social media icons"><br>
-
+    <aside class="media">
+        <div class="social">
+            <img src="images/fb.png" alt="fb icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/insta.png" alt="instagram icon">
+            <p>Stay current on social media!</p>
+        </div>
+    </aside>
+    
+    <aside id="map">
+            <img src="images/map.png" alt="map of salt lake city">
     </aside>
 
+    <aside class="contact">
+        <p>&#9742; 555-567-8900 &#9742;  --  &#9993; shawniecannon@gmail.com &#9993;</p>
+    </aside>
+ 
     <footer>
-        <p>Copyright &COPY; 2019 | Climate Clues | Preston, ID</p>
-        <p>Today's date is <span id="currentdate"</span>.</div></p>
-
-    </footer>
-    <script src="js/hamburger.js"></script>
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Preston, ID</p>
+        <p>Today's date is <span id="currentdate" </span>. </div> </p> </footer> <script src="js/hamburger.js"></script>
+                <script src="js/date.js"></script>
 
 </body>
