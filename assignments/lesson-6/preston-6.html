@@ -42,11 +42,11 @@
     <main>
         <h2>Preston, Idaho</h2>
         <div class="intro">
-            <figure>
-                <img src="images/herosmall.jpg" alt="samll town picture from pexels.com" sizes="100vw" srcset="
-                images/herosmall.jpg 200w,
-                images/herolarge.jpg 700w">
-            </figure>
+            <picture>
+                <source srcset="images/herolarge.jpg" media="(min-width: 450px) and (max-width: 1200px)">
+                    <source srcset="images/townoriginal.jpg" media="(min-width: 1201px)">
+                <img src="images/herosmall.jpg" alt="samll town picture from pexels.com">
+            </picture>
 
 
             <section class="weather-summary">
