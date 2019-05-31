@@ -60,7 +60,7 @@ main {
 
 .motto {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     margin: 0;
     padding: 10px;
@@ -131,9 +131,10 @@ nav a:hover {
 position: absolute;
 top: 10px;
 left: 30px;
-background-color: #d2a728;
+background-color: #83941e;
 color: #fff;
 text-align: center;
+font-size: .8rem;
 padding: 7px;
 min-width: 180px;
 max-width: 225px;
@@ -143,7 +144,7 @@ clear: both;
 
 .wstext {
     text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
-    font-weight: normal;
+    font-weight: .8rem;
 }
  .both img {
      width: 100%
