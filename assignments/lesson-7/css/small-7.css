@@ -169,7 +169,6 @@ nav a:hover {
 
 .wstext {
     text-shadow: .6px .6px black, .6px .6px black, .6px .6px black, .6px .6px black;
-    font-weight: .7rem;
     padding: 2px;
     font-size: 1.4rem;
     letter-spacing: .025rem;
@@ -188,7 +187,6 @@ nav a:hover {
 
 .wsbox .right {
     text-align: left;
-}
 }
 
 .both img {
@@ -209,14 +207,12 @@ nav a:hover {
 
 .image-gal figure {
     padding: 5px 5px 20px;
-    font-weight: bold;
-    font-style: Pacifico;
-    font-size: .9rem;
-    letter-spacing: .025rem;
+    letter-spacing: .05rem;
     background-color: whitesmoke;
     border: 1px solid lightslategray;
     margin: 2px;
     grid-column: 2 / 3;
+    font-family: serif;
 
 }
 
