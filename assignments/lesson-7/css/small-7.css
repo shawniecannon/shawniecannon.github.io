@@ -319,9 +319,7 @@ aside.contact {
     margin: 0;
 }
 footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center
+    
     
     margin: 0;
     background-color: #83941e;
