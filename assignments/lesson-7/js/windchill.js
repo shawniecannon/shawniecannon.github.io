@@ -1,5 +1,3 @@
-
-
 var t = parseFloat(document.getElementById('temp').innerHTML);
 var s = parseFloat(document.getElementById('wind').innerHTML);
 

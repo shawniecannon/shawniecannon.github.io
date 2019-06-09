@@ -39,7 +39,7 @@ h4 {
     color: #2b2a2a
 }
 
-h2, 
+h2,
 h3,
 h5,
 h6 {
@@ -84,6 +84,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .point li {
     display: inline-block;
     margin-right: 1rem;
@@ -91,12 +92,13 @@ main {
 
 .point li:first-child {
     display: block;
-    }
-    .point li {
-        display: inline-block;
-        margin-right: 1rem;
-    }
-    
+}
+
+.point li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
 
 .point li {
     display: none;
@@ -111,21 +113,22 @@ nav ul li a {
     color: ghostwhite;
     font-family: 'Righteous', Arial, bold;
     letter-spacing: .10rem;
-    border-top: 1px solid rgba(0,0,0,0.3);
-}
-
-
-    nav a:hover {
-        background-color: rgba(0,0,0,0.4);
-        color: #cef4ee;
-    }
-nav ul li.active a {
-    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 
 nav a:hover {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #cef4ee;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
     color: #cef4ee;
 }
 
@@ -147,20 +150,21 @@ nav a:hover {
     height: auto;
 
 }
+
 .weather-summary {
-position: absolute;
-top: 10px;
-left: 30px;
-background-color: #83941e;
-color: #fff;
-text-align: center;
-font-size: .9rem;
-padding: 7px;
-min-width: 160px;
-max-width: 225px;
-font-weight: bold;
-border-radius: 5px;
-box-shadow: 5px 5px 20px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: #83941e;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    padding: 7px;
+    min-width: 160px;
+    max-width: 225px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px;
 }
 
 .wstext {
@@ -178,12 +182,19 @@ box-shadow: 5px 5px 20px;
     grid-column-gap: .25rem;
 }
 
-.wsbox .left { text-align: right; }
-.wsbox .right { text-align: left; }
+.wsbox .left {
+    text-align: right;
 }
- .both img {
-     width: 100%
- }
+
+.wsbox .right {
+    text-align: left;
+}
+}
+
+.both img {
+    width: 100%
+}
+
 .intro img {
     width: 100%;
     height: auto;
@@ -193,7 +204,7 @@ box-shadow: 5px 5px 20px;
     display: grid;
     grid-template-columns: 20px 1fr 20px;
     grid-template-rows: auto;
-    
+
 }
 
 .image-gal figure {
@@ -205,7 +216,7 @@ box-shadow: 5px 5px 20px;
     background-color: whitesmoke;
     border: 1px solid lightslategray;
     margin: 2px;
-    grid-column: 2 / 3 ;
+    grid-column: 2 / 3;
 
 }
 
@@ -219,18 +230,22 @@ box-shadow: 5px 5px 20px;
     display: none;
     position: relative;
     margin: auto;
-    
+
 }
 
-table, th, td, tr {
+table,
+th,
+td,
+tr {
     border-collapse: collapse;
     border: 2px solid black;
     padding: 7px;
     text-align: center;
     font-size: .85rem;
 
-    
+
 }
+
 td img {
     max-width: 50px;
 }
@@ -261,6 +276,7 @@ article {
     border-radius: 5px;
     box-shadow: 5px 3px 5px 5px grey;
 }
+
 .headline {
     text-align: left;
     margin-bottom: 3px;
@@ -268,18 +284,21 @@ article {
 
 .bytag {
     font-family: Pacifico, serif;
-    margin-bottom : 3px;
+    margin-bottom: 3px;
 }
+
 figure {
     float: right;
 }
+
 .article figure figcaption {
     text-align: center;
     margin-bottom: 6px;
     font-family: Pacifico;
     padding-top: 8px;
 }
-    aside {
+
+aside {
     color: #000;
     text-align: center;
     clear: both;
@@ -297,6 +316,7 @@ aside img {
     letter-spacing: .05rem;
     margin: 0;
 }
+
 .social img {
     padding: 3px;
 }
@@ -312,15 +332,17 @@ aside img {
 aside.contact {
     background-color: #c4caa2;
 }
+
 #map {
-  background-color: #7390d1;
+    background-color: #7390d1;
     align-items: center;
     padding: 5px;
     margin: 0;
 }
+
 footer {
-    
-    
+
+
     margin: 0;
     background-color: #83941e;
     text-align: center;
@@ -328,5 +350,5 @@ footer {
     width: 100%;
     color: #fff;
     padding: 3px;
-    
+
 }

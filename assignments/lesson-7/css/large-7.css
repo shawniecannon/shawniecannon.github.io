@@ -9,7 +9,7 @@
     }
 
     .wgheading {
-      
+
         margin-top: 15px;
     }
 
@@ -32,7 +32,8 @@
         margin-right: 1rem;
     }
 
-    nav ul, .point {
+    nav ul,
+    .point {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -43,7 +44,7 @@
         justify-content: center;
     }
 
-   
+
     nav li a:hover {
         background-color: #83941e;
     }
@@ -67,21 +68,24 @@
         width: 275px;
         float: right;
     }
-   figure figcaption {
+
+    figure figcaption {
         padding-top: 15px;
     }
 }
 
-@media only screen and (min-width: 50em)  {
+@media only screen and (min-width: 50em) {
 
-.image-gal img:hover {box-shadow: 0 0 50px #333;}
+    .image-gal img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 
-.image-gal {
-    display: grid;
-    grid-template-columns: 20px 1fr 1fr 1fr 20px;
-    grid-template-rows: 1fr 1fr;
-    
-}
+    .image-gal {
+        display: grid;
+        grid-template-columns: 20px 1fr 1fr 1fr 20px;
+        grid-template-rows: 1fr 1fr;
+
+    }
 }
 
 }
