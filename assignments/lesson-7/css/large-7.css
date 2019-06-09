@@ -8,6 +8,11 @@
         font-size: 3.5rem;
     }
 
+    .wgheading {
+      
+        margin-top: 15px;
+    }
+
     .headings {
         margin-left: 4rem;
     }
@@ -65,4 +70,18 @@
     figure figcaption {
         padding-top: 15px;
     }
+}
+
+@media only screen and (min-width: 50em)  {
+
+.image-gal img:hover {box-shadow: 0 0 50px #333;}
+
+.image-gal {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr;
+    
+}
+}
+
 }
