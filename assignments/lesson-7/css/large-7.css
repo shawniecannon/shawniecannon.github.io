@@ -67,7 +67,7 @@
         width: 275px;
         float: right;
     }
-    figure figcaption {
+   figure figcaption {
         padding-top: 15px;
     }
 }
