@@ -200,8 +200,8 @@ nav a:hover {
 
 .image-gal {
     display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: .25rem;
 
 }
 
@@ -209,16 +209,17 @@ nav a:hover {
     padding: 5px 5px 20px;
     letter-spacing: .05rem;
     background-color: whitesmoke;
-    border: 1px solid lightslategray;
-    margin: 2px;
-    grid-column: 2 / 3;
     font-family: serif;
 
 }
 
+.image-gal img {
+    width: 100%;
+    height: auto;
+}
 
 
-.image-gal figcaption {
+.caption {
     padding-left: 5px;
 }
 
