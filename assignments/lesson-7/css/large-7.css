@@ -28,18 +28,14 @@
     }
 
     .point li {
-        display: inline-block;
         margin-right: 1rem;
     }
 
     nav ul,
     .point {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
         background-color: #7390d1;
-        display: inline-flex;
         flex-flow: row wrap;
         justify-content: center;
     }
