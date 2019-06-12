@@ -5,7 +5,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-collapse: collapse;
 
   }
@@ -35,7 +35,6 @@ table, th, td {
  }
 tbody th {
     font-weight: bold;
-     
  }
 
  tfoot {
