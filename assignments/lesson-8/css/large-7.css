@@ -26,7 +26,10 @@
     .point li:first-child {
         display: none;
     }
-
+    .point li {
+        display: inline-flex;
+        padding: .2rem .5rem;
+    }
 
     nav ul,
     .point {
@@ -36,6 +39,7 @@
         flex-flow: row wrap;
         justify-content: center;
     }
+
 
 
     nav li a:hover {
