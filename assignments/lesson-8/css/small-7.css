@@ -430,6 +430,7 @@ form label.sbs {
 
 label.top select {
     padding: .75rem 0;
+    text-align: right;
 }
 
 #ratingvalue {
