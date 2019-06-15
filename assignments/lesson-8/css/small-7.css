@@ -429,7 +429,7 @@ form label.sbs {
 }
 
 #ratingvalue {
-    text-align: center;
+    text-align: right;
 }
 
 form input.s-button {
