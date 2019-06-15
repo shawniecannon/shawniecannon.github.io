@@ -57,7 +57,7 @@
             <fieldset>
                 <legend>Storm Info</legend>
                 <label class="top">Storm Date<input type="date" name="s-date"></label>
-                <label class="top">Type of Storm
+                <label class="top" name="stormtype">Type of Storm
                     <input list="s-type">
                     <datalist id="s-type">
                         <option value="Flash flood">
@@ -68,7 +68,7 @@
                     </datalist>
                 </label>
 
-                <label class="top">Storm Severity <em>(from 1 to 10) </em><span id="ratingvalue"> ===> 5</span><input
+                <label class="top" name="severity">Storm Severity <em>(from 1 to 10) </em><span id="ratingvalue"> ===> 5</span><input
                         type="range" min="1" max="10" value="5" step="1" id="srange" oninput="adjustRating(this.value)"
                         onchange="adjustRating(this.value)"></label>
                 <label class="top">Storm Region
@@ -92,7 +92,7 @@
                 <textarea name="comments" rows="10" cols="50"></textarea>
             </fieldset>
 
-            <input type="submit" value="Report Storm" class="s-button">
+            <input type="submit" value="Report Storm" class="s-button" name="s-button">
 
         </form>
     </main>
