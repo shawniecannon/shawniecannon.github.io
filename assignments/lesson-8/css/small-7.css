@@ -395,7 +395,10 @@ form div {
     color: #4d618d;
 
 }
+textarea {
+width: 95%;
 
+}
 form label.top input,
 form label.top select {
     display: block;
