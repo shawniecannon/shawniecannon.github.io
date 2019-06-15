@@ -66,6 +66,8 @@ main {
 }
 
 fieldset {
+    width: 100%;
+    margin: 2px;
 }
 
 .motto {
@@ -120,11 +122,6 @@ nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #cef4ee;
-}
 
 .point a:active {
     background: black;
@@ -376,12 +373,12 @@ h3.storm {
 }
 
 form fieldset {
-    margin: 2rem 0;
+    margin: 2rem 5px 2rem 0px;
     border: 2px solid #7390d1;
     border-radius: 10px;
     padding: .5rem 2%;
     width: 100%;
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 form legend {
@@ -408,6 +405,7 @@ form label.top input, form label.top select {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
 }
 
 form label.sbs {
