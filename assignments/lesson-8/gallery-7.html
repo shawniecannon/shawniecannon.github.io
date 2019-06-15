@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather Gallery for Preston, Idaho</title>
+    <meta name="description" content="Beautiful weather picture gallery for Preston, Idaho">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/stormicon.png" alt="stormy weather icon">
+
+        <div class="headings">
+            <h1>Climate Clues</h1>
+            <div class="motto">Weather News Now</div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="point">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="preston-7.html">Home</a></li>
+            <li><a href="stormcenter.html">Report Storms</a></li>
+            <li><a href="#">7-Day View</a></li>
+            <li><a href="gallery-7.html">Weather Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Search</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <h2 class="wgheading">Weather Gallery</h2>
+        <div class="image-gal">
+            <figure>
+                <img src="images/wgimages/wg-lightening-medium.jpg" alt="weather with lightning from pexels.com">
+                <figcaption class="caption">Lightening hitting Preston.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wgimages/wg-overcast-medium.jpg" alt="sunset with clouds from pexels.com">
+                <figcaption class="caption">Sunset on an overcast day in Idaho.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wgimages/wg-partly-medium.jpg" alt="partly cloudy skies from pexels.com">
+                <figcaption class="caption">Partly cloudy with blue skies.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wgimages/wg-rain-medium.jpg" alt="plant with rain from pexels.com">
+                <figcaption class="caption">Preston looks beautiful in the rain.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wgimages/wg-snow-medium.jpg" alt="trees with snow from pexels.com">
+                <figcaption class="caption">Snow & trees in Preston.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wgimages/wg-overcast-medium.jpg" alt="sunset with clouds from pexels.com">
+                <figcaption class="caption">Sunny day over a river.</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <aside class="media">
+        <div class="social">
+            <img src="images/fb.png" alt="fb icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/insta.png" alt="instagram icon">
+            <p>Stay current on social media!</p>
+        </div>
+    </aside>
+
+    <aside id="map">
+        <img src="images/map.png" alt="map of salt lake city">
+    </aside>
+
+    <aside class="contact">
+        <p>&#9742; 555-567-8900 &#9742; -- &#9993; shawniecannon@gmail.com &#9993;</p>
+    </aside>
+
+    <footer class="end">
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT</p>
+        <p>Today's date is <span id="currentdate"></span>.</p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+
+</body>
+</html>
