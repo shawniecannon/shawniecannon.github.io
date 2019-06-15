@@ -26,6 +26,7 @@
     .point li:first-child {
         display: none;
     }
+
     .point li {
         display: inline-flex;
         padding: .2rem .5rem;

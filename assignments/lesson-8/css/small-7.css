@@ -344,7 +344,7 @@ footer {
 
 /* Form */
 #storm-main {
-    width:100%;
+    width: 100%;
 
 }
 
@@ -360,7 +360,7 @@ footer {
     max-width: 15rem;
     text-align: left;
     letter-spacing: .02rem;
- 
+
 }
 
 h3.storm {
@@ -388,14 +388,16 @@ form legend {
     font-size: 1.4rem;
 }
 
-form label.top, form div {
-    display:block;
+form label.top,
+form div {
+    display: block;
     padding: 1rem;
     color: #4d618d;
 
 }
 
-form label.top input, form label.top select {
+form label.top input,
+form label.top select {
     display: block;
     font-size: 1rem;
     border: 1px solid #999;
