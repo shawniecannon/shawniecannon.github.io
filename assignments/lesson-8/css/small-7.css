@@ -88,18 +88,9 @@ fieldset {
     flex-direction: column;
 }
 
-.point li {
-    display: inline-block;
-    margin-right: 1rem;
-}
 
 .point li:first-child {
     display: block;
-}
-
-.point li {
-    display: inline-block;
-    margin-right: 1rem;
 }
 
 
@@ -129,10 +120,6 @@ nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.responsive li {
-    display: none;
-}
-
 
 nav a:hover {
     background-color: rgba(0, 0, 0, 0.4);
@@ -144,9 +131,10 @@ nav a:hover {
     color: white;
 }
 
-.point li {
+.responsive li {
     display: block;
 }
+
 
 .intro {
     position: relative;
