@@ -65,10 +65,6 @@ main {
     margin: auto;
 }
 
-fieldset {
-    width: 100%;
-    margin: 2px;
-}
 
 .motto {
     color: white;
@@ -330,16 +326,12 @@ aside.contact {
 }
 
 footer {
-
-
-    margin: 0;
     background-color: #83941e;
     text-align: center;
     font-size: 0.9rem;
     width: 100%;
     color: #fff;
     padding: 3px;
-
 }
 
 /* Form */
@@ -395,10 +387,12 @@ form div {
     color: #4d618d;
 
 }
+
 textarea {
-width: 95%;
+    width: 95%;
 
 }
+
 form label.top input,
 form label.top select {
     display: block;
