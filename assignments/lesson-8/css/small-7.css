@@ -428,6 +428,10 @@ form label.sbs {
     color: #555;
 }
 
+label.top select {
+    padding: .75rem 0;
+}
+
 #ratingvalue {
     text-align: right;
 }
