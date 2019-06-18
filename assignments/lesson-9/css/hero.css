@@ -1,0 +1,58 @@
+/* || general styles */
+
+html {
+    font-family: 'Slabo 27px', serif;
+  }
+  
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .4rem;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    background-color: #83941e;
+    color: white;
+  }
+  
+  header p {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #d2a728;
+    color: black;
+    padding: 5px 0;
+  }
+  
+  /* section styles */
+  
+  section article {
+    width: 33%;
+    float: right;
+    font-size: 1.2rem;
+  }
+  
+  section p {
+    margin: 5px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7390d1;
+  }
+  
+  section ul {
+    margin-top: 0;
+    color: #475a85;
+  }
+  
+  h2 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    letter-spacing: .15rem;
+  }
