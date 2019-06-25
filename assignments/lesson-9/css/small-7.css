@@ -457,18 +457,22 @@ form label.top input:required:valid {
 
 .townp {
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: wrap;
     margin: 5px 0 25px;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
   
 }
-
+.townmain {
+    max-width: 100%;
+}
 .townsection {
     padding: 5px;
-    margin: 0 15px;
+    margin: 0 15px 10px;
     background: whitesmoke;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     border: 6px ridge /*#d2a728*/ #2ad4cb;
+
     
 }
 .townsection ul {
@@ -503,6 +507,7 @@ form label.top input:required:valid {
     margin: 10px 15px;
     padding: 2px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+    height: auto;
 }
 .towncaption {
     text-align: center;
