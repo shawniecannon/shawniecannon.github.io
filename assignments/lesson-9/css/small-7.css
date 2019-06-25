@@ -491,6 +491,13 @@ form label.top input:required:valid {
 
 }
 
+.towndiv {
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bold;
+    
+}
+
 .townimg {
     border: 2px solid #7390d1;
     margin: 10px 15px;
