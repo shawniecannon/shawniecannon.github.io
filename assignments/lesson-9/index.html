@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather & News</title>
+    <meta name="description" content="The Climate Clues site keeps you on top of weather and town news.">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/stormicon.png" alt="stormy weather icon">
+
+        <div class="headings">
+            <h1>Climate Clues</h1>
+            <div class="motto">Weather News Now</div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="point">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stormcenter.html">Report Storms</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="gallery-7.html">Weather Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Search</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <h2 class="townh2">Select Town for Weather and News</h2>
+        <div class="townp">
+            <section class="townsection">
+                <h3 class="townh3">Preston</h3>
+                <article>
+
+                </article>
+                <figure class=townimg>
+                    <img src="images/wgimages/wg-lightening-small.jpg" alt="weather with lightning from pexels.com">
+                    <figcaption class="towncaption">Lightening hitting Preston.</figcaption>
+                </figure>
+
+            </section>
+            <section class="townsection">
+                <h3 class="townh3">Soda Springs</h3>
+                <ul>
+                    <li>Json</li>
+                    <li>Json2</li>
+                </ul>
+                <figure class=townimg>
+                    <img src="images/wgimages/wg-rain-small.jpg" alt="rain scene from pexels.com">
+                    <figcaption class="towncaption">Soda Springs has water.</figcaption>
+                </figure>
+            </section>
+            <section class="townsection">
+                <h3 class="townh3">Fish Haven</h3>
+                <ul>
+                    <li>Json</li>
+                    <li>Json2</li>
+                </ul>
+                <figure class=townimg>
+                    <img src="images/wgimages/wg-snow-small.jpg" alt="beautiful snow from pexels.com">
+                    <figcaption class="towncaption">Come ice fishing.</figcaption>
+                </figure>
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+    <aside class="media">
+        <div class="social">
+            <img src="images/fb.png" alt="fb icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/insta.png" alt="instagram icon">
+            <p>Stay current on social media!</p>
+        </div>
+    </aside>
+
+    <aside id="map">
+        <img src="images/map.png" alt="map of salt lake city">
+    </aside>
+
+    <aside class="contact">
+        <p>&#9742; 555-567-8900 &#9742; -- &#9993; shawniecannon@gmail.com &#9993;</p>
+    </aside>
+
+    <footer class="end">
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT</p>
+        <p>Today's date is <span id="currentdate"></span>.</p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script>
+        var section = document.querySelector('section');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function () {
+            var townsection = request.response;
+            showData(townsection);
+        }
+
+        function showData(jsonObj) {
+            var info = jsonObj['towns'];
+
+            for (var i = 0; i < info.length; i++) {
+                var myArticle = document.createElement('article');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+
+                myPara1.textContent = 'Motto: ' + info[i].motto;
+                myPara2.textContent = 'Year Founded: ' + info[i].yearFounded;
+                myPara3.textContent = 'Population: ' + info[i].currentPopulation;
+                myPara4.textContent = 'Rainfall: ' + info[i].averageRainfall;
+            }
+
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+
+            section.appendChild(myArticle);
+        }
+        }
+    </script>
+
+</body>
+
+</html>
