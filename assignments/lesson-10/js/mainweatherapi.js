@@ -30,14 +30,14 @@ document.getElementById('chill').innerHTML = windChill(weatherData.main.temp_max
 /*let icon = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon + ".png";
     let desc = weatherData.weather[0].description;
 
-    document.getElementById('cc-img').setAttribute('src', icon);
-    document.getElementById('cc-img').setAttribute('alt', desc); */
+    document.getElementById('abc-img').setAttribute('src', icon);
+    document.getElementById('abc-img').setAttribute('alt', desc); */
     
     /*var t = parseFloat(document.getElementById('temp').innerHTML);
 var s = parseFloat(document.getElementById('wind').innerHTML);
 
 var f = 35.74 + (0.6215 * t) - (35.75 * (Math.pow(s, 0.16))) + ((0.4275 * t) * (Math.pow(s, 0.16)));
-document.getElementById("chill").innerHTML = f.toFixed(1) + "&deg;F"; */
+document.getElementById("chill").innerHTML = f.toFixed(1) <==== NOOO!   + "&deg;F"; */
 
 /*  f1032fc36d05c17197425dc4e32cd89e */
 
@@ -47,7 +47,7 @@ document.getElementById("chill").innerHTML = f.toFixed(1) + "&deg;F"; */
 
 //Fish Haven  5593814
 
-
+//HaHa...nice try.  Arggghhh!
 
 /*if (document.getElementById('townid').innerHTML == "Preston") {
 let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=f1032fc36d05c17197425dc4e32cd89e';
@@ -61,7 +61,6 @@ else if (document.getElementById('townid').innerHTML == "Fish Haven")  {
 else {
     let apiURLstring = NaN;
 }
-
 */
 
 /*let weatherRequest = new XMLHttpRequest ();
