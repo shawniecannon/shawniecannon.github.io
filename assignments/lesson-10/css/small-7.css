@@ -177,6 +177,23 @@ nav ul li.active a {
     text-align: left;
 }
 
+#asideevent {
+background-color: #2ad4cb;
+padding: 3px;
+}
+ul#townevents li {
+    display: inline-block;
+    list-style-type: none;
+    letter-spacing: .025rem;
+    padding: 0 11px;
+}
+
+.h5events {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .03rem;
+    padding-bottom: 5px;
+}
 .both img {
     width: 100%
 }
@@ -226,7 +243,9 @@ tr {
     border: 2px solid black;
     padding: 7px;
     text-align: center;
-    font-size: .85rem;
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: .025rem;
 
 
 }
@@ -239,6 +258,7 @@ th {
     background-color: #d2a728;
     color: black;
 }
+
 
 article {
     margin: 10px 0 0 0;

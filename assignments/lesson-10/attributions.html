@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Weather Gallery for Preston, Idaho</title>
-    <meta name="description" content="Beautiful weather picture gallery for Preston, Idaho">
+    <title>Attributions for Climate Clues</title>
+    <meta name="description" content="Thanks to the contributors to this site.">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-7.css">
-    <link rel="stylesheet" href="css/medium-7.css">
     <link rel="stylesheet" href="css/large-7.css">
+
+
 </head>
 
 <body>
@@ -28,43 +29,27 @@
         <ul class="point">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="gallery-7.html">Weather Gallery</a></li>
             <li><a href="stormcenter.html">Report Storms</a></li>
+           
+
         </ul>
 
     </nav>
 
     <main>
-        <h2 class="wgheading">Weather Gallery</h2>
-        <div class="image-gal">
-            <figure>
-                <img src="images/wgimages/wg-lightening-medium.jpg" alt="weather with lightning from pexels.com">
-                <figcaption class="caption">Lightening hitting Preston.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wgimages/wg-overcast-medium.jpg" alt="sunset with clouds from pexels.com">
-                <figcaption class="caption">Sunset on an overcast day in Idaho.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wgimages/wg-partly-medium.jpg" alt="partly cloudy skies from pexels.com">
-                <figcaption class="caption">Partly cloudy with blue skies.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wgimages/wg-rain-medium.jpg" alt="plant with rain from pexels.com">
-                <figcaption class="caption">Preston looks beautiful in the rain.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wgimages/wg-snow-medium.jpg" alt="trees with snow from pexels.com">
-                <figcaption class="caption">Snow & trees in Preston.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/wgimages/wg-overcast-medium.jpg" alt="sunset with clouds from pexels.com">
-                <figcaption class="caption">Sunny day over a river.</figcaption>
-            </figure>
+        <h2>Atrributions</h2>
+        <div>
+            Thanks to the following websites for their contributions to Climate Clues:<br><br>
+            <a href="http://www.pexels.com">pexels.com</a> (free license images)<br>
+            <a href="http://www.iconfinder.com">iconfinder.com</a> (free license icons)<br>
+        <a href="http://openweather.org">Openweathermap.org</a> (for up-to-date info and local weather)<br><br>
         </div>
+
+        
     </main>
 
     <aside class="media">
@@ -85,12 +70,39 @@
     </aside>
 
     <footer class="end">
-        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT</p>
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a href="attributions.html"></a>Attributions</p>
         <p>Today's date is <span id="currentdate"></span>.</p>
     </footer>
 
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
+    <script src="js/practice.js"></script>
+    <script src="js/windchill.js"></script>
+
+    <script>
+           const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            let request = new XMLHttpRequest();
+            var info; // globally defined
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+
+            request.onload = function () {
+                let towndata = request.response;
+                let towns = towndata['towns'];
+                let output = document.querySelector('#townevents');
+
+                towns.forEach(town => {
+                    if (town.name == 'Preston') {
+                        for (var j = 0; j <town.events.length; j++) {
+                        let myLi = document.createElement('li');
+                        myLi.textContent = town.events[j];
+                        output.appendChild(myLi);
+                    }
+                }
+            })
+        }
+        </script>
 
 </body>
 </html>

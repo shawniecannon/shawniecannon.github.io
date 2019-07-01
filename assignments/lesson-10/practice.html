@@ -34,7 +34,7 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="gallery-7.html">Weather Gallery</a></li>
             <li><a href="stormcenter.html">Report Storms</a></li>
-
+           
 
         </ul>
 
@@ -85,21 +85,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span id="temp1"></span>&deg;F<br><img id="fimg1"></img>
-                            <div id="fdiv1"></div>
-                        </td>
-                        <td><span id="temp2"></span>&deg;F<br><img id="fimg2"></img>
-                            <div id="fdiv2"></div>
-                        </td>
-                        <td><span id="temp3"></span>&deg;F<br><img id="fimg3"></img>
-                            <div id="fdiv3"></div>
-                        </td>
-                        <td><span id="temp4"></span>&deg;F<br><img id="fimg4"></img>
-                            <div id="fdiv4"></div>
-                        </td>
-                        <td><span id="temp5"></span>&deg;F<br><img id="fimg5"></img>
-                            <div id="fdiv5"></div>
-                        </td>
+                        <td><span id ="temp1"></span>&deg;F<br><img id="fimg1"></img><div id="fdiv1"></div></td>
+                        <td><span id ="temp2"></span>&deg;F<br><img id="fimg2"></img><div id="fdiv2"></div></td>
+                        <td><span id ="temp3"></span>&deg;F<br><img id="fimg3"></img><div id="fdiv3"></div></td>
+                        <td><span id ="temp4"></span>&deg;F<br><img id="fimg4"></img><div id="fdiv4"></div></td>
+                        <td><span id ="temp5"></span>&deg;F<br><img id="fimg5"></img><div id="fdiv5"></div></td>
                     </tr>
                 </tbody>
             </table>
@@ -151,32 +141,31 @@
     </aside>
 
     <footer class="end">
-        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a
-                href="attributions.html">Attributions</a></p>
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a href="attributions.html">Attributions</a></p>
         <p>Today's date is <span id="currentdate"></span>.</p>
     </footer>
 
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
-    <script src="js/mainweatherapi.js"></script>
+    <script src="js/practice.js"></script>
     <script src="js/windchill.js"></script>
 
     <script>
-        const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-        let request = new XMLHttpRequest();
-        var info; // globally defined
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
+           const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            let request = new XMLHttpRequest();
+            var info; // globally defined
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
 
-        request.onload = function () {
-            let towndata = request.response;
-            let towns = towndata['towns'];
-            let output = document.querySelector('#townevents');
+            request.onload = function () {
+                let towndata = request.response;
+                let towns = towndata['towns'];
+                let output = document.querySelector('#townevents');
 
-            towns.forEach(town => {
-                if (town.name == 'Preston') {
-                    for (var j = 0; j < town.events.length; j++) {
+                towns.forEach(town => {
+                    if (town.name == 'Preston') {
+                        for (var j = 0; j <town.events.length; j++) {
                         let myLi = document.createElement('li');
                         myLi.textContent = town.events[j];
                         output.appendChild(myLi);
@@ -184,8 +173,7 @@
                 }
             })
         }
-    </script>
+        </script>
 
 </body>
-
 </html>
