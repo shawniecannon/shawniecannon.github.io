@@ -509,9 +509,8 @@ form label.top input:required:valid {
 
 .townh3 {
     font-size: 1.5rem;
-    color: /*#83941e */ /* #2fbd40*/;
     padding-bottom: 10px;
-    letter-spacing: .025;
+    letter-spacing: .025rem;
 
 }
 
