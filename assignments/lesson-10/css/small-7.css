@@ -20,8 +20,6 @@ h2 {
     padding: 7px;
 }
 
-
-
 .wgheading {
     text-align: left;
     padding: 10px;
@@ -178,14 +176,17 @@ nav ul li.active a {
 }
 
 #asideevent {
-background-color: #c4caa2;
-padding: 3px;
+    background-color: #c4caa2;
+    padding: 3px;
+    box-shadow: 2px 2px 15px grey;
+    border-top: 1px solid #333;
 }
+
 ul#townevents li {
     display: inline-block;
     list-style-type: none;
     letter-spacing: .02rem;
-    padding: 0 13px;
+    padding: 0 13px 8px;
     font-family: Abril Fatface, serif;
 }
 
@@ -195,6 +196,7 @@ ul#townevents li {
     letter-spacing: .02rem;
     padding-bottom: 5px;
 }
+
 .both img {
     width: 100%
 }
@@ -232,7 +234,7 @@ ul#townevents li {
 .table {
     display: none;
     position: relative;
-    margin: auto;
+    margin: 10px auto;
 
 }
 
@@ -482,20 +484,25 @@ form label.top input:required:valid {
     margin: 5px 0 25px;
     justify-content: center;
     width: 100%;
-  
+
 }
+
 .townmain {
     max-width: 100%;
 }
+
 .townsection {
     padding: 5px;
     margin: 0 15px 10px;
     background: whitesmoke;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-    border: 6px ridge /*#d2a728*/ #2ad4cb;
+    border: 6px ridge
+        /*#d2a728*/
+        #2ad4cb;
 
-    
+
 }
+
 .townsection ul {
     list-style: none;
     text-align: center;
@@ -519,7 +526,7 @@ form label.top input:required:valid {
     text-align: center;
     font-size: .9rem;
     font-weight: bold;
-    
+
 }
 
 .townimg {
@@ -529,6 +536,7 @@ form label.top input:required:valid {
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
     height: auto;
 }
+
 .towncaption {
     text-align: center;
     padding: 1px 0px 5px;
