@@ -72,7 +72,7 @@ main {
     font-weight: bold;
     margin: 0;
     padding: 10px;
-    letter-spacing: .05rem;
+    letter-spacing: .03rem;
 }
 
 .point {
@@ -178,20 +178,21 @@ nav ul li.active a {
 }
 
 #asideevent {
-background-color: #2ad4cb;
+background-color: #c4caa2;
 padding: 3px;
 }
 ul#townevents li {
     display: inline-block;
     list-style-type: none;
-    letter-spacing: .025rem;
-    padding: 0 11px;
+    letter-spacing: .02rem;
+    padding: 0 13px;
+    font-family: Abril Fatface, serif;
 }
 
 .h5events {
     font-size: 1.2rem;
     font-weight: bold;
-    letter-spacing: .03rem;
+    letter-spacing: .02rem;
     padding-bottom: 5px;
 }
 .both img {
