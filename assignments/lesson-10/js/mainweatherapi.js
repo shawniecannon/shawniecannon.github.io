@@ -30,14 +30,13 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
-    console.log(forecastData);
+    //console.log(forecastData);
 
     let tempforecast = [];
     let forecasticon = [];
     let foremain = [];
     let altforecast = [];
     let day = 1;
-    //let weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     forecastData.list.forEach(hour => {
         if (hour.dt_txt.includes('18:00:00')) {
@@ -59,20 +58,14 @@ forecastRequest.onload = function () {
     }
 }
 
-/*function tomorrow() {
-    var d = new Date();
-    var weekday = new Array(7);
-    weekday[6] = "Sunday";
-    weekday[0] = "Monday";
-    weekday[1] = "Tuesday";
-    weekday[2] = "Wednesday";
-    weekday[3] = "Thursday";
-    weekday[4] = "Friday";
-    weekday[5] = "Saturday";
-  
-    var n = weekday[d.getDay()];
-    for (let j = 1, j <= 5, j++) {
-    document.getElementById("tomorrow" + j).innerHTML = n[n + j];
-  }
-}*/
-//document.getElementById('chill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed) + "&deg;F";
+
+const weekday = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+const output = document.getElementsByTagName("thead");
+let tdate = new Date();
+let dayb = weekday[tdate.getDay()];
+
+for (let i = 1; i <= 5; i++) {
+	dayb = document.createElement("th");
+	dayb.textContent = weekday[(tdate.getDay() + i)%7];
+	output[0].appendChild(dayb);
+}

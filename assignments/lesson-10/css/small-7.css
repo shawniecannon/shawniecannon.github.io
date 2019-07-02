@@ -176,7 +176,7 @@ nav ul li.active a {
 }
 
 #asideevent {
-    background-color: #c4caa2;
+    background-color: #d2a728;
     padding: 3px;
     box-shadow: 2px 2px 15px grey;
     border-top: 1px solid #333;
@@ -185,16 +185,15 @@ nav ul li.active a {
 ul#townevents li {
     display: inline-block;
     list-style-type: none;
-    letter-spacing: .02rem;
     padding: 0 13px 8px;
-    font-family: Abril Fatface, serif;
+    font-family: serif;
 }
 
 .h5events {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     letter-spacing: .02rem;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    font-family: Abril Fatface, serif;
 }
 
 .both img {
@@ -249,6 +248,7 @@ tr {
     font-weight: bold;
     font-size: .9rem;
     letter-spacing: .025rem;
+    background-color: #c4caa2;
 
 
 }
@@ -258,8 +258,9 @@ td img {
 }
 
 th {
-    background-color: #d2a728;
-    color: black;
+    background-color: #83941e;
+    //color: #2ad4cb;
+    color: white;
 }
 
 
@@ -288,11 +289,13 @@ article {
 .headline {
     text-align: left;
     margin-bottom: 3px;
+    color: #1a52ca;
 }
 
 .bytag {
     font-family: Pacifico, serif;
     margin-bottom: 3px;
+    color: #1a52ca;
 }
 
 .article figure {
