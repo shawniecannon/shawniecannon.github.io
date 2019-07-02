@@ -289,17 +289,15 @@ article {
 .headline {
     text-align: left;
     margin-bottom: 3px;
-    color: #1a52ca;
 }
 
 .bytag {
     font-family: Pacifico, serif;
     margin-bottom: 3px;
-    color: #1a52ca;
 }
 
 .article figure {
-    float: right;
+    float: right
 }
 
 .article figure figcaption {
@@ -307,6 +305,10 @@ article {
     margin-bottom: 6px;
     font-family: Pacifico;
     padding-top: 8px;
+}
+
+.article img {
+    background-color: #7390d1;
 }
 
 aside {
