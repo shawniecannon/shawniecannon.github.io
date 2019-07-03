@@ -1,0 +1,86 @@
+@media only screen and (min-width: 32.5em) {
+
+    header img {
+        width: 10rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .wgheading {
+
+        margin-top: 15px;
+    }
+
+    .headings {
+        margin-left: 4rem;
+    }
+
+    nav {
+        text-align: center;
+        background-color: #7390d1;
+        box-shadow: 0px 2px 2px lightgray;
+    }
+
+    .point li:first-child {
+        display: none;
+    }
+
+    .point li {
+        display: inline-flex;
+        padding: .2rem .5rem;
+    }
+
+    nav ul,
+    .point {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #7390d1;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+
+
+    nav li a:hover {
+        background-color: #83941e;
+    }
+
+    table {
+        margin: 5px auto;
+    }
+
+    .table {
+        display: block;
+        margin: 15px 0;
+
+    }
+
+    .forecast {
+        font-family: 'Righteous', Arial, cursive;
+        font-size: 1.2rem;
+        letter-spacing: .05rem;
+    }
+
+    .article img {
+        width: 275px;
+        float: right;
+    }
+
+    figure figcaption {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 50em) {
+
+    .image-gal img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .image-gal {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}

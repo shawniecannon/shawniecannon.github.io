@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather & News</title>
+    <meta name="description" content="The Climate Clues site keeps you on top of weather town news.">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/stormicon.png" alt="stormy weather icon">
+
+        <div class="headings">
+            <h1>Climate Clues</h1>
+            <div class="motto">Weather News Now</div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="point">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="gallery.html">Weather Gallery</a></li>
+            <li><a href="stormcenter.html">Report Storms</a></li>
+
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <h2 id="townid">Preston, Idaho</h2>
+        <div class="intro">
+            <picture>
+                <source srcset="images/town800px.jpg" media="(min-width: 450px) and (max-width: 1200px)">
+                <source srcset="images/townoriginal.jpg" media="(min-width: 1201px)">
+                <img src="images/town400px.jpg" alt="samll town picture from pexels.com">
+            </picture>
+
+            <section class="weather-summary">
+                <h3 class="wstext">Weather Summary</h3>
+                <div class="wsbox">
+                    <div class="left">Currently:</div>
+                    <div class="right"><span id="wscurrent"></span></div>
+                    <div class="left">High:</div>
+                    <div class="right"><span id="temp"></span>&deg;F</div>
+                    <div class="left">Wind Chill:</div>
+                    <div class="right"> <span id="chill"></span></div>
+                    <div class="left">Humidity:</div>
+                    <div class="right"><span id="wshumidity"></span></div>
+                    <div class="left">Wind Speed:</div>
+                    <div class="right"><span id="wind"></span> mph</div>
+                </div>
+            </section>
+
+            <aside id="asideevent">
+                <h5 class="h5events">Upcoming Events</h5>
+                <ul id="townevents"></ul>
+            </aside>
+
+
+        </div>
+        <section class="table">
+            <table>
+                <thead>
+                    <tr id="daysofweek">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="temp1"></span>&deg;F<br><img id="fimg1"></img>
+                            <div id="fdiv1"></div>
+                        </td>
+                        <td><span id="temp2"></span>&deg;F<br><img id="fimg2"></img>
+                            <div id="fdiv2"></div>
+                        </td>
+                        <td><span id="temp3"></span>&deg;F<br><img id="fimg3"></img>
+                            <div id="fdiv3"></div>
+                        </td>
+                        <td><span id="temp4"></span>&deg;F<br><img id="fimg4"></img>
+                            <div id="fdiv4"></div>
+                        </td>
+                        <td><span id="temp5"></span>&deg;F<br><img id="fimg5"></img>
+                            <div id="fdiv5"></div>
+                        </td>
+                    </tr>
+                    <caption>Preston 5-Day Forcast</caption>
+                </tbody>
+            </table>
+
+        </section>
+        <section class="article">
+            <article>
+                <h4 class="headline">Outdoor News</h4>
+                <div class="bytag">by Shawnie Cannon</div><br>
+                <figure>
+                    <img src="images/people.jpg" alt="random picture from pexels.com">
+                    <figcaption>Enjoy the outdoors with friends!</figcaption>
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </article>
+        </section>
+
+    </main>
+
+    <aside class="media">
+        <div class="social">
+            <img src="images/fb.png" alt="fb icon">
+            <img src="images/twitter.png" alt="twitter icon">
+            <img src="images/insta.png" alt="instagram icon">
+            <p>Stay current on social media!</p>
+        </div>
+    </aside>
+
+    <aside id="map">
+        <img src="images/map.png" alt="map of salt lake city">
+    </aside>
+
+    <aside class="contact">
+        <p>&#9742; 555-567-8900 &#9742; -- &#9993; shawniecannon@gmail.com &#9993;</p>
+    </aside>
+
+    <footer class="end">
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a
+                href="attributions.html">Attributions</a></p>
+        <p>Today's date is <span id="currentdate"></span>.</p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/mainweatherapi.js"></script>
+    <script src="js/windchill.js"></script>
+
+    <script>
+        const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        let request = new XMLHttpRequest();
+        var info; // globally defined
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function () {
+            let towndata = request.response;
+            let towns = towndata['towns'];
+            let output = document.querySelector('#townevents');
+
+            towns.forEach(town => {
+                if (town.name == 'Preston') {
+                    for (var j = 0; j < town.events.length; j++) {
+                        let myLi = document.createElement('li');
+                        myLi.textContent = town.events[j];
+                        output.appendChild(myLi);
+                    }
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>
