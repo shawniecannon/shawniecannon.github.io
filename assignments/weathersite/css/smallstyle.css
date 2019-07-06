@@ -110,6 +110,11 @@ nav a:hover {
     color: #cef4ee;
 }
 
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px #2ad4cb;
+}
+
 
 .point a:active {
     background: black;
@@ -117,12 +122,6 @@ nav a:hover {
     
 }
 
-.homeb a.homeb, .fhb a.fhb, .pb a.pb,
-.ssb a.ssb, .gb a.gb, .scb a.scb {
-    background-color: black;
-    color: ghostwhite;
-    border-bottom: 3px black;
-}
 .responsive li {
     display: block;
 }

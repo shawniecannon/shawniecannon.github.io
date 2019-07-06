@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Preston Weather & News</title>
-    <meta name="description" content="The Climate Clues site keeps you on top of Preston weather town news.">
+    <title>Fish Haven Weather & News</title>
+    <meta name="description" content="Fish Haven weather and news you can count on.">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/mediumstyle.css">
     <link rel="stylesheet" href="css/largestyle.css">
 
 
@@ -28,12 +29,12 @@
     <nav>
         <ul class="point">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li class="homeb"><a href="index.html">Home</a></li>
-            <li class="fhb"><a href="fishhaven.html">Fish Haven</a></li>
-            <li class="pb"><a href="preston.html">Preston</a></li>
-            <li class="ssb"><a href="sodasprings.html">Soda Springs</a></li>
-            <li class="gb"><a href="gallery.html">Weather Gallery</a></li>
-            <li class="scb"><a href="stormcenter.html">Report Storms</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="gallery.html">Weather Gallery</a></li>
+            <li><a href="stormcenter.html">Report Storms</a></li>
 
 
         </ul>
@@ -41,12 +42,12 @@
     </nav>
 
     <main>
-        <h2 id="townid" data-id="5604473">Preston, Idaho</h2>
+        <h2 id="townid" data-id="5593814">Fish Haven, Idaho</h2>
         <div class="intro">
             <picture>
-                <source srcset="images/town800px.jpg" media="(min-width: 450px) and (max-width: 1200px)">
-                <source srcset="images/townoriginal2.jpg" media="(min-width: 1201px)">
-                <img src="images/town400px.jpg" alt="samll town picture from pexels.com">
+                <source srcset="images/fhtown8002.jpg" media="(min-width: 450px) and (max-width: 1200px)">
+                <source srcset="images/fhtownlarge2.jpg" media="(min-width: 1201px)">
+                <img src="images/fhtown4002.jpg" alt="Scenic view of Fish Haven">
             </picture>
 
             <section class="weather-summary">
@@ -73,8 +74,9 @@
 
         </div>
         <div class="table">
+
             <table>
-                <caption>Preston 5-Day Forcast</caption>
+                <caption>Fish Haven 5-Day Forcast</caption>
                 <thead>
                     <tr id="daysofweek">
                     </tr>
@@ -98,16 +100,17 @@
                         </td>
                     </tr>
                 </tbody>
+
             </table>
 
         </div>
         <div class="article">
             <article>
-                <h4 class="headline">Outdoor News</h4>
+                <h4 class="headline">Fishing Forecast</h4>
                 <div class="bytag">by Shawnie Cannon</div><br>
                 <figure>
-                    <img src="images/people.jpg" alt="random picture from pexels.com">
-                    <figcaption>Enjoy the outdoors with friends!</figcaption>
+                    <img src="images/boat.jpg" alt="random picture from pexels.com">
+                    <figcaption>Catch the biggest fish!</figcaption>
                 </figure>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -125,7 +128,9 @@
 
             </article>
         </div>
+
     </main>
+
     <aside class="media">
         <div class="social">
             <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
@@ -169,7 +174,7 @@
             let output = document.querySelector('#townevents');
 
             towns.forEach(town => {
-                if (town.name == 'Preston') {
+                if (town.name == 'Fish Haven') {
                     for (var j = 0; j < town.events.length; j++) {
                         let myLi = document.createElement('li');
                         myLi.textContent = town.events[j];
