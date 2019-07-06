@@ -177,7 +177,7 @@ nav ul li.active a {
 
 #asideevent {
     background-color: #d2a728;
-    padding: 3px;
+    padding: 3px 0;
     box-shadow: 2px 2px 15px grey;
     border-top: 1px solid #333;
 }
@@ -199,6 +199,7 @@ ul#townevents li {
 
 h4#homefooter {
     background-color: #2ad4cb;
+    border-radius: 6px;
     box-shadow: 2px 2px 15px grey;
     padding: 10px;
     margin: 40px auto; 
@@ -364,6 +365,7 @@ aside.contact {
     align-items: center;
     padding: 5px;
     margin: 0;
+    font-size: 0.8rem;
 }
 
 footer {
