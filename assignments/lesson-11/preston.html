@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Weather & News</title>
-    <meta name="description" content="The Climate Clues site keeps you on top of weather town news.">
+    <title>Preston Weather & News</title>
+    <meta name="description" content="The Climate Clues site keeps you on top of Preston weather town news.">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -50,7 +50,7 @@
             </picture>
 
             <section class="weather-summary">
-                <div class="wstext">Weather Summary</div>
+                <h6 class="wstext">Weather Summary</h6>
                 <div class="wsbox">
                     <div class="left">Currently:</div>
                     <div class="right"><span id="wscurrent"></span></div>
@@ -72,36 +72,36 @@
 
 
         </div>
-        <section class="table">
+        <div class="table">
             <table>
+                <caption>Preston 5-Day Forcast</caption>
                 <thead>
                     <tr id="daysofweek">
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span id="temp1"></span>&deg;F<br><img id="fimg1"></img>
+                        <td><span id="temp1"></span>&deg;F<br><img id="fimg1">
                             <div id="fdiv1"></div>
                         </td>
-                        <td><span id="temp2"></span>&deg;F<br><img id="fimg2"></img>
+                        <td><span id="temp2"></span>&deg;F<br><img id="fimg2">
                             <div id="fdiv2"></div>
                         </td>
-                        <td><span id="temp3"></span>&deg;F<br><img id="fimg3"></img>
+                        <td><span id="temp3"></span>&deg;F<br><img id="fimg3">
                             <div id="fdiv3"></div>
                         </td>
-                        <td><span id="temp4"></span>&deg;F<br><img id="fimg4"></img>
+                        <td><span id="temp4"></span>&deg;F<br><img id="fimg4">
                             <div id="fdiv4"></div>
                         </td>
-                        <td><span id="temp5"></span>&deg;F<br><img id="fimg5"></img>
+                        <td><span id="temp5"></span>&deg;F<br><img id="fimg5">
                             <div id="fdiv5"></div>
                         </td>
                     </tr>
-                    <caption>Preston 5-Day Forcast</caption>
                 </tbody>
             </table>
 
-        </section>
-        <section class="article">
+        </div>
+        <div class="article">
             <article>
                 <h4 class="headline">Outdoor News</h4>
                 <div class="bytag">by Shawnie Cannon</div><br>
@@ -124,10 +124,8 @@
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             </article>
-        </section>
-
+        </div>
     </main>
-
     <aside class="media">
         <div class="social">
             <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
@@ -139,6 +137,7 @@
 
     <aside id="map">
         <img src="images/map.png" alt="map of salt lake city">
+        <p>4922 Ontario Dr., Salt Lake City, UT 84104</p>
     </aside>
 
     <aside class="contact">
