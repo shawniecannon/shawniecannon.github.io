@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Weather & News</title>
-    <meta name="description" content="The Climate Clues site keeps you on top of weather town news.">
+    <meta name="description" content="Fish Haven weather and news you can count on.">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/mediumstyle.css">
     <link rel="stylesheet" href="css/largestyle.css">
 
 
@@ -41,12 +42,12 @@
     </nav>
 
     <main>
-        <h2 id="townid" data-id="5604473">Preston, Idaho</h2>
+        <h2 id="townid" data-id="5593814">Fish Haven, Idaho</h2>
         <div class="intro">
             <picture>
-                <source srcset="images/town800px.jpg" media="(min-width: 450px) and (max-width: 1200px)">
-                <source srcset="images/townoriginal.jpg" media="(min-width: 1201px)">
-                <img src="images/town400px.jpg" alt="samll town picture from pexels.com">
+                <source srcset="images/fhtown800.jpg" media="(min-width: 450px) and (max-width: 1200px)">
+                <source srcset="images/fhtownlarge.jpg" media="(min-width: 1201px)">
+                <img src="images/fhtown400.jpg" alt="Scenic view of Fish Haven">
             </picture>
 
             <section class="weather-summary">
@@ -96,18 +97,18 @@
                             <div id="fdiv5"></div>
                         </td>
                     </tr>
-                    <caption>Preston 5-Day Forcast</caption>
+                    <caption>Fish Haven 5-Day Forcast</caption>
                 </tbody>
             </table>
 
         </section>
         <section class="article">
             <article>
-                <h4 class="headline">Outdoor News</h4>
+                <h4 class="headline">Fishing Forecast</h4>
                 <div class="bytag">by Shawnie Cannon</div><br>
                 <figure>
-                    <img src="images/people.jpg" alt="random picture from pexels.com">
-                    <figcaption>Enjoy the outdoors with friends!</figcaption>
+                    <img src="images/boat.jpg" alt="random picture from pexels.com">
+                    <figcaption>Catch the biggest fish!</figcaption>
                 </figure>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -170,7 +171,7 @@
             let output = document.querySelector('#townevents');
 
             towns.forEach(town => {
-                if (town.name == 'Preston') {
+                if (town.name == 'Fish Haven') {
                     for (var j = 0; j < town.events.length; j++) {
                         let myLi = document.createElement('li');
                         myLi.textContent = town.events[j];

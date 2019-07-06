@@ -1,30 +1,40 @@
+function getTownURL() {
+    let townElement = document.getElementById("townid");
+    let tID = townElement.getAttribute("data-id");
+    let urlTemplate = "https://api.openweathermap.org/data/2.5/weather?id=" + tID + "&units=imperial&APPID=f1032fc36d05c17197425dc4e32cd89e";
+    //console.log(townElement, tID, urlTemplate);
+    return urlTemplate;
+}
+
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=f1032fc36d05c17197425dc4e32cd89e';
+let apiURLstring = getTownURL();
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
 weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
 
     document.getElementById('wscurrent').innerHTML = " " + weatherData.weather[0].main;
     document.getElementById('temp').innerHTML = " " + weatherData.main.temp_max.toFixed(0);
     document.getElementById('wshumidity').innerHTML = " " + weatherData.main.humidity + "%";
     document.getElementById('wind').innerHTML = " " + weatherData.wind.speed.toFixed(0);
 
-
-
     function windChill(t, s) {
         var x = 35.74 + (0.6215 * t) - (35.75 * (Math.pow(s, 0.16))) + ((0.4275 * t) * (Math.pow(s, 0.16)));
         return x.toFixed()
     }
-
     document.getElementById('chill').innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed) + "&deg;F";
-
 }
 
+function getTownURL2() {
+    let townElement = document.getElementById("townid");
+    let tID = townElement.getAttribute("data-id");
+    let urlTemplate2 = "https://api.openweathermap.org/data/2.5/forecast?id=" + tID + "&units=imperial&APPID=f1032fc36d05c17197425dc4e32cd89e";
+    //console.log(townElement, tID, urlTemplate);
+    return urlTemplate2;
+}
 let forecastRequest = new XMLHttpRequest();
-let forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=f1032fc36d05c17197425dc4e32cd89e';
+let forecastURL = getTownURL2();
 forecastRequest.open('Get', forecastURL, true);
 forecastRequest.send();
 
@@ -57,15 +67,13 @@ forecastRequest.onload = function () {
 
     }
 }
-
-
 const weekday = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 const output = document.getElementsByTagName("thead");
 let tdate = new Date();
 let dayb = weekday[tdate.getDay()];
 
 for (let i = 1; i <= 5; i++) {
-	dayb = document.createElement("th");
-	dayb.textContent = weekday[(tdate.getDay() + i)%7];
-	output[0].appendChild(dayb);
+    dayb = document.createElement("th");
+    dayb.textContent = weekday[(tdate.getDay() + i) % 7];
+    output[0].appendChild(dayb);
 }

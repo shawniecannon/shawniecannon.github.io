@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-7.css">
-    <link rel="stylesheet" href="css/large-7.css">
-
-
+    <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/mediumstyle.css">
+    <link rel="stylesheet" href="css/largestyle.css">
 </head>
 
 <body>
@@ -29,9 +28,9 @@
         <ul class="point">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Soda Springs</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
             <li><a href="gallery.html">Weather Gallery</a></li>
             <li><a href="stormcenter.html">Report Storms</a></li>
 
@@ -40,47 +39,55 @@
     </nav>
 
     <main class="townmain">
-        <h2 class="townh2">Select Town for Weather and News</h2>
+        <h2 class="townh2">Your Personalized Weather Site</h2>
         <div class="townp">
             <section class="townsection">
-                    <a href="preston-10.html"><h3 class="townh3">Preston</h3></a>
-                <div class="towndiv" id="prestonSec"></div></a>
-                <figure class=townimg>
-                        <a href="preston-10.html"><img src="images/wgimages/wg-lightening-small.jpg" alt="weather with lightning from pexels.com"></a>
-                    <figcaption class="towncaption">Lightening hitting Preston.</figcaption>
-                </figure>
-
-            </section>
-            <section class="townsection">
-                <h3 class="townh3">Soda Springs</h3>
-                <div class="towndiv" id="sodaSpringsSec"></div>
-
-                <figure class=townimg>
-                    <img src="images/wgimages/wg-rain-small.jpg" alt="rain scene from pexels.com">
-                    <figcaption class="towncaption">Soda Springs has water.</figcaption>
-                </figure>
-            </section>
-            <section class="townsection">
-                <h3 class="townh3">Fish Haven</h3>
+                <a href="fishhaven.html"><h3 class="townh3">Fish Haven</h3></a>
                 <div class="towndiv" id="fishHavenSec"></div>
 
                 <figure class=townimg>
-                    <img src="images/wgimages/wg-snow-small.jpg" alt="beautiful snow from pexels.com">
+                    <a href="fishhaven.html"><img src="images/wgimages/wg-snow-small.jpg" alt="beautiful snow"></a>
                     <figcaption class="towncaption">Come ice fishing.</figcaption>
                 </figure>
             </section>
 
+            <section class="townsection">
+                <a href="preston.html">
+                    <h3 class="townh3">Preston</h3>
+                </a>
+                <div class="towndiv" id="prestonSec"></div></a>
+                <figure class=townimg>
+                    <a href="preston.html"><img src="images/wgimages/wg-lightening-small.jpg"
+                            alt="weather with lightning"></a>
+                    <figcaption class="towncaption">Lightening hits Preston.</figcaption>
+                </figure>
 
+            </section>
+            <section class="townsection">
+                <a href="sodasprings.html"><h3 class="townh3">Soda Springs</h3></a>
+                <div class="towndiv" id="sodaSpringsSec"></div>
+
+                <figure class=townimg>
+                    <a href="sodasprings.html"><img src="images/wgimages/wg-rain-small.jpg" alt="rain scene "></a>
+                    <figcaption class="towncaption">Soda Springs has water.</figcaption>
+                </figure>
+            </section>
+            
+            
         </div>
-
-
     </main>
+
+    <section>
+        <div>
+            <h4 id="homefooter">Select Town Above for Weather and News</h4>
+        </div>
+    </section>
 
     <aside class="media">
         <div class="social">
-            <img src="images/fb.png" alt="fb icon">
-            <img src="images/twitter.png" alt="twitter icon">
-            <img src="images/insta.png" alt="instagram icon">
+            <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.png" alt="instagram icon"></a>
             <p>Stay current on social media!</p>
         </div>
     </aside>

@@ -64,8 +64,9 @@
     }
 
     .article img {
-        width: 275px;
+        width: 200px;
         float: right;
+      
     }
 
     figure figcaption {
