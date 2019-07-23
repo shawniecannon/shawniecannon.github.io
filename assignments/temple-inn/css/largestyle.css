@@ -1,0 +1,17 @@
+
+
+@media only screen and (min-width: 32.5em) {
+
+    .navrow, div.subrow {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+@media only screen and (min-width: 62.5em) {
+
+    .navrow {
+        font-size: 1.6rem;
+
+    }
+}

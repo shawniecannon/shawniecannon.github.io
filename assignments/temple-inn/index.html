@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Temple Inn & Suites</title>
     <meta name="description" content="Places to stay | Temple Inn & Suites | Rome | Wash DC | SLC | San Diego">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:700%7CCinzel+Decorative%7CFrank+Ruhl+Libre&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Amaranth%7CCinzel+Decorative%7CFrank+Ruhl+Libre&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/smallstyle.css">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/mediumstyle.css">
+    <link rel="stylesheet" href="css/largestyle.css">
 </head>
 
 <body>
@@ -22,140 +23,75 @@
         </div>
     </header>
 
-   // Still modifying below - ignore.
-    
     <nav>
-        <ul class="point">
+        <ul class="navbar">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="sodasprings.html">Soda Springs</a></li>
-            <li><a href="gallery.html">Weather Gallery</a></li>
-            <li><a href="stormcenter.html">Report Storms</a></li>
-
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Suites</a></li>
+            <li><a href="#">Amenities</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Reservations</a></li>
         </ul>
-
     </nav>
 
-    <main class="townmain">
-        <h2 class="townh2">Your Personalized Weather Site</h2>
-        <div class="townp">
-            <section class="townsection">
-                <a href="fishhaven.html">
-                    <h3 class="townh3">Fish Haven</h3>
-                </a>
-                <div class="towndiv" id="fishHavenSec"></div>
-
-                <figure class=townimg>
-                    <a href="fishhaven.html"><img src="images/wgimages/wg-snow-small.jpg" alt="beautiful snow"></a>
-                    <figcaption class="towncaption">Come ice fishing.</figcaption>
-                </figure>
-            </section>
-
-            <section class="townsection">
-                <a href="preston.html">
-                    <h3 class="townh3">Preston</h3>
-                </a>
-                <div class="towndiv" id="prestonSec"></div>
-                <figure class=townimg>
-                    <a href="preston.html"><img src="images/wgimages/wg-lightening-small.jpg"
-                            alt="weather with lightning"></a>
-                    <figcaption class="towncaption">Lightening hits Preston.</figcaption>
-                </figure>
-
-            </section>
-            <section class="townsection">
-                <a href="sodasprings.html">
-                    <h3 class="townh3">Soda Springs</h3>
-                </a>
-                <div class="towndiv" id="sodaSpringsSec"></div>
-
-                <figure class=townimg>
-                    <a href="sodasprings.html"><img src="images/wgimages/wg-rain-small.jpg" alt="rain scene "></a>
-                    <figcaption class="towncaption">Soda Springs has water.</figcaption>
-                </figure>
-            </section>
-
-
+    <main>
+        <h2>Make Your Temple Trip Memorable</h2>
+        <div class="navrow">
+            <div class="navbox1"><img src="images/home/romebutton2.jpg" alt="rome coluseum" class="navimg">Locations</div>
+            <div class="navbox2"><img src="images/home/bedbutton2.jpg" alt="bed" class="navimg">Rooms</div>
+            <div class="navbox3"><img src="images/home/cribbutton2.jpg" alt="crib" class="navimg">Amenities</div>
+            <div class="navbox4"><img src="images/home/foodbutton2.jpg" alt="food" class="navimg">Services</div>
         </div>
+
+        <div class='homehero'>
+            <section>
+                <h3>Rooms As Beautiful As Your Temple Experience</h3>
+                <div>Deluxe suites & standard rooms available. Queen & double size beds.</div>
+                <picture>
+                    <source srcset="images/home/lobby800.jpg" media="(min-width: 450px) and (max-width: 1200px)">
+                    <source srcset="images/home/lobby1200.jpg" media="(min-width: 1201px)">
+                    <img src="images/home/lobby400.jpg" alt="hotel lobby">
+                </picture>
+            </section>
+        </div>
+<section>
+    <h3>Choose From Four Major Cities With Temples</h3>
+    <div class="subrow">
+            <div class="subbox1">Salt Lake<br><img src="images/location/slcsquare.jpg" class="subimg"></div>
+            <div class="subbox2">Rome<br><img src="images/location/romesquare.jpg" class="subimg"></div>
+            <div class="subbox3">Wash DC<br><img src="images/location/washdcsquare.jpg" class="subimg"></div>
+            <div class="subbox4">San Diego<br><img src="images/location/palmsquare.jpg" class="subimg"></div>
+        </div>
+</section>
     </main>
 
-    <section>
-        <div>
-            <h4 id="homefooter">Select Town Above for Weather and News</h4>
-        </div>
-    </section>
-
-    <aside class="media">
+    <aside class="contact">
+            <p>&#9742; 555-567-8900 &#9742;  ---  &#9993; templeinn@gmail.com &#9993;</p>
+        </aside>
+    
+        <footer class="end">
+            <p>Copyright &COPY; 2019 | Temple Inn & Suites | Salt Lake City, UT | <a
+                    href="attributions.html">Attributions</a></p>
+        </footer>
+    <aside>
         <div class="social">
+                <p>Stay current on social media!</p>
             <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
             <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
             <a href="https://www.instagram.com"><img src="images/insta.png" alt="instagram icon"></a>
-            <p>Stay current on social media!</p>
+           
         </div>
     </aside>
 
-    <aside id="map">
-        <img src="images/map.png" alt="map of salt lake city">
-        <p>4922 Ontario Dr., Salt Lake City, UT 84104</p>
-    </aside>
+   
 
-    <aside class="contact">
-        <p>&#9742; 555-567-8900 &#9742; -- &#9993; shawniecannon@gmail.com &#9993;</p>
-    </aside>
-
-    <footer class="end">
-        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a
-                href="attributions.html">Attributions</a></p>
-        <p>Today's date is <span id="currentdate"></span>.</p>
-    </footer>
+    
 
     <script src="js/hamburger.js"></script>
-    <script src="js/currentdate.js"></script>
+    
 
-    <script>
-        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-        var request = new XMLHttpRequest();
-        var info; // globally defined
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function () {
-            var townsection = request.response;
-            showData(townsection);
-        }
-
-        function showSection(town, sectionId) {
-            var section = document.getElementById(sectionId);
-            var myArticle = document.createElement('article');
-            var myPara1 = document.createElement('p');
-            var myPara2 = document.createElement('p');
-            var myPara3 = document.createElement('p');
-            var myPara4 = document.createElement('p');
-            for (var i = 0; i < info.length; i++) {
-                if (info[i].name == town) {
-                    myPara1.textContent = 'Motto: ' + info[i].motto;
-                    myPara2.textContent = 'Year Founded: ' + info[i].yearFounded;
-                    myPara3.textContent = 'Population: ' + info[i].currentPopulation;
-                    myPara4.textContent = 'Rainfall: ' + info[i].averageRainfall;
-                }
-            }
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-            section.appendChild(myArticle);
-        }
-
-        function showData(jsonObj) {
-            info = jsonObj['towns'];
-
-            showSection("Soda Springs", "sodaSpringsSec");
-            showSection("Preston", "prestonSec");
-            showSection("Fish Haven", "fishHavenSec");
-        }
-    </script>
+    
 
 </body>
 

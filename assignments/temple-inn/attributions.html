@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Attributions for Climate Clues</title>
+    <meta name="description" content="Thanks to the contributors to this site.">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface%7CPacifico%7CRighteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/largestyle.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/stormicon.png" alt="stormy weather icon">
+
+        <div class="headings">
+            <h1>Climate Clues</h1>
+            <div class="motto">Weather News Now</div>
+        </div>
+
+    </header>
+    <nav>
+        <ul class="point">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="homeb"><a href="index.html">Home</a></li>
+            <li class="fhb"><a href="fishhaven.html">Fish Haven</a></li>
+            <li class="pb"><a href="preston.html">Preston</a></li>
+            <li class="ssb"><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="gb"><a href="gallery.html">Weather Gallery</a></li>
+            <li class="scb"><a href="stormcenter.html">Report Storms</a></li>
+
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <h2>Atrributions</h2>
+        <div>
+            Thanks to the following websites for their contributions to Temple Inn & Suites:<br><br>
+            <a href="http://www.pexels.com">pexels.com</a> (free license images)<br>
+            <a href="http://www.burst.com">burst.com</a> (free license images)<br>
+            <a href="http://www.pixabay.com">pixabay.com</a> (free license images)<br>
+            <a href="http://www.commons.wikimedia.org">wikimedia.org/a> (free license images)<br>
+            <a href="http://www.churchofjesuschrist.org">churchofjesuschrist.org</a>(temple schedules & info)<br>
+            <a href="http://www.iconfinder.com">iconfinder.com</a> (free license icons)<br>
+            <a href="http://openweather.org">Openweathermap.org</a> (for up-to-date info and local weather)<br><br>
+        </div>
+
+
+    </main>
+
+    <aside class="media">
+        <div class="social">
+            <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.png" alt="instagram icon"></a>
+            <p>Stay current on social media!</p>
+        </div>
+    </aside>
+
+    <aside id="map">
+        <img src="images/map.png" alt="map of salt lake city">
+        <p>4922 Ontario Dr., Salt Lake City, UT 84104</p>
+    </aside>
+
+    <aside class="contact">
+        <p>&#9742; 555-567-8900 &#9742; -- &#9993; shawniecannon@gmail.com &#9993;</p>
+    </aside>
+
+    <footer class="end">
+        <p>Copyright &COPY; 2019 | Climate Clues | by Shawnie Cannon | Salt Lake City, UT | <a
+                href="attributions.html">Attributions</a></p>
+        <p>Today's date is <span id="currentdate"></span>.</p>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/practice.js"></script>
+    <script src="js/windchill.js"></script>
+
+    <script>
+        const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        let request = new XMLHttpRequest();
+        var info; // globally defined
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function () {
+            let towndata = request.response;
+            let towns = towndata['towns'];
+            let output = document.querySelector('#townevents');
+
+            towns.forEach(town => {
+                if (town.name == 'Preston') {
+                    for (var j = 0; j < town.events.length; j++) {
+                        let myLi = document.createElement('li');
+                        myLi.textContent = town.events[j];
+                        output.appendChild(myLi);
+                    }
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>

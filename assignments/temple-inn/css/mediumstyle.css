@@ -1,0 +1,25 @@
+@media only screen and (min-width: 18em) {
+    .navrow, div.subrow {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+@media only screen and (min-width: 32.5em) {
+.navbar li:first-child {
+    display: none;
+}
+
+.navbar li {
+    display: inline-flex;
+    padding: .2rem .5rem;
+    letter-spacing: .01rem;
+}
+
+.navbar {
+    overflow: hidden;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+}

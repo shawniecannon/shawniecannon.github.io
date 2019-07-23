@@ -1,7 +1,12 @@
 /* main css custom file */
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-size: 16px;
 }
 
 header img {
@@ -10,12 +15,175 @@ header img {
 
 h1 {
     font-family: 'Cinzel Decorative', Georgia, serif;
-    font-size: 3rem;
+    font-size: 2.65rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #889099;
+}
+
+h2 {
+    margin: 1.75em 0 .75em;
+    font-family: 'Amaranth', Georgia, sans-serif;
+}
+h3 {
+    margin: 1.3em 0 0;
+    font-family: 'Amaranth', Georgia, sans-serif;
+    font-weight: bold;
 }
 
 header {
-    display: flex;
-    justify-content: flex-start;
+    background-color: #ffccbd;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #889099;
+    width: 100%;
+    box-shadow: 0 0 15px #889099;
+}
+
+.navbar {
+    background: #889099;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li:first-child {
+    display: block;
+}
+
+.navbar li {
+    display: none;
+}
+
+nav ul li a {
+    padding: .25rem;
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: ghostwhite;
+    font-family: 'Amaranth', Georgia, sans-serif;
+}
+
+.active {
+    background-color: rgba(80, 136, 204, 0.8);
+   color: ghostwhite;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar a:active {
+    background: #5088cc;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    margin:  0 auto;
+}
+
+.navrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: .25em;
+    font-size: 1.3rem;
+    margin: .15em 0 .6em;
+    justify-content: space-around;
+    
+}
+
+div.navbox1 {
+    /*grid-column: 1;*/
+    border: 1px solid black;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+div.navbox2 {
+    /*grid-column: 2;*/
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+div.navbox3 {
+    /*grid-column: 3;*/
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+div.navbox4 {
+    /*grid-column: 4;*/
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+.navimg {
+    margin-right: 20px;
+}
+
+.homehero img {
+    width: 100%;
+    margin: .15em 0 .35em;
+}
+
+div.subrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: .25em;
+    font-size: 1.1rem;
+    margin: .5em 0 2rem;
+    font-family: 'Amaranth', Georgia, sans-serif;
+}
+
+.subimg {
+    width: 100%;
+    height: auto;
+}
+
+.social {
+    padding: 10px 5px 15px 0px;
+    font-family: 'Amaranth', Georgia, sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .05rem;
+    /*background-color: rgba(124, 252, 255, 0.6);*/
+    background-color: rgba(80, 136, 204, .8);
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 8px;
+    color: ghostwhite;
+}
+
+.social img {
+    margin: .15em 3px 3px;
+    padding: 4px;
+    background-color: rgba(124, 252, 255, 0.6);
+    border-radius: 6px;
+}
+.contact {
+    background-color: #889099;
+    font-family: 'Amaranth', Georgia, sans-serif;
+    text-align: center;
+    color: ghostwhite;
+    margin: auto;
+    padding: 5px 0;
+}
+
+.end {
+    background-color: rgba(255, 204, 189, 1);
+    font-family: 'Amaranth', Georgia, sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
 }
