@@ -1,3 +1,3 @@
 function adjustRating(dayrange) {
-    document.getElementById("daynumber").innerHTML ="   ===>  " + dayrange;
+    document.getElementById("daynumber").innerHTML = "   ===>  " + dayrange;
 }
