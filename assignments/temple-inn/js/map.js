@@ -1,9 +1,16 @@
 function initMap() {
 
+   // const loc = {
+   //    lat: 40.743126,
+   //    lng: -111.922174
+   // };
+   const mapCoordinates = document.getElementById("map").getAttribute("data-id").split(",");
    const loc = {
-      lat: 40.743126,
-      lng: -111.922174
+      lat: parseFloat(mapCoordinates[0]),
+      lng: parseFloat(mapCoordinates[1])
    };
+   console.log(loc);
+
    const map = new google.maps.Map(document.querySelector('.map'), {
       zoom: 14,
       center: loc
