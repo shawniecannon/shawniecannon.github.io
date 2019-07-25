@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Temple Inn & Suites</title>
-    <meta name="description" content="Places to stay | Temple Inn & Suites | Rome | Wash DC | SLC | San Diego">
+    <title>Washington DC Weather, Map & Temple Closures</title>
+    <meta name="description" content="Washington DC Weather | Map | Temple Inn & Suites | Washington DC Temple Closures">
     <link href="https://fonts.googleapis.com/css?family=Amaranth%7CCinzel+Decorative%7CFrank+Ruhl+Libre&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -25,7 +25,7 @@
     <nav>
         <ul class="navbar">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="locations.html">Locations</a></li>
             <li><a href="rooms.html">Suites</a></li>
             <li><a href="amenities.html">Amenities</a></li>
@@ -35,7 +35,7 @@
     </nav>
 
     <main>
-        <h2>Complete Your Trip</h2>
+        <h2>Useful Information For Washington DC</h2>
         <div class="navrow">
             <a href="locations.html">
                 <div class="navbox1"><img src="images/home/romebutton2.jpg" alt="rome coluseum" class="navimg">Locations
@@ -51,28 +51,41 @@
                 <div class="navbox4"><img src="images/home/foodbutton2.jpg" alt="food" class="navimg">Services</div>
             </a>
         </div>
-        <div class='homehero'>
-            <section>
-                <h3>Rooms As Beautiful As Your Temple Experience</h3>
-                <div>Deluxe suites & standard rooms available. Queen & double size beds.</div>
-                <a href="rooms.html">
-                    <picture>
-                        <source srcset="images/home/lobby800.jpg" media="(min-width: 450px) and (max-width: 1200px)">
-                        <source srcset="images/home/lobby1200.jpg" media="(min-width: 1201px)">
-                        <img src="images/home/lobby400.jpg" alt="hotel lobby">
-                    </picture>
-                </a>
-            </section>
-        </div>
         <section>
-            <h3>Choose From Four Major Cities With Temples</h3>
-            <div class="subrow">
-                <div class="subbox1">Salt Lake<br><a href="saltlake.html"><img src="images/location/slcsquare.jpg" class="subimg"></a></div>
-                <div class="subbox2">Rome<br><a href="rome.html"><img src="images/location/romesquare.jpg" class="subimg"></a></div>
-                <div class="subbox3">Wash DC<br><a href="washdc.html"><img src="images/location/washdcsquare.jpg" class="subimg"></a></div>
-                <div class="subbox4">San Diego<br><a href="sandiego.html"><img src="images/location/palmsquare.jpg" class="subimg"></a></div>
-            </div>
-        </section>
+                <h3 id="townid" data-id="7091093">Washington DC Weather, Map and More.</h3>
+                <div class="table">
+                        <table>
+                            <caption>Washington DC 5-Day Forcast</caption>
+                            <thead>
+                                <tr id="daysofweek">
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span id="temp1"></span>&deg;F<br><img id="fimg1">
+                                        <div id="fdiv1"></div>
+                                    </td>
+                                    <td><span id="temp2"></span>&deg;F<br><img id="fimg2">
+                                        <div id="fdiv2"></div>
+                                    </td>
+                                    <td><span id="temp3"></span>&deg;F<br><img id="fimg3">
+                                        <div id="fdiv3"></div>
+                                    </td>
+                                    <td><span id="temp4"></span>&deg;F<br><img id="fimg4">
+                                        <div id="fdiv4"></div>
+                                    </td>
+                                    <td><span id="temp5"></span>&deg;F<br><img id="fimg5">
+                                        <div id="fdiv5"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+            
+                    </div>
+
+                    <div class="map"></div>
+            </section>
+
     </main>
 
     <aside class="contact">
@@ -96,6 +109,12 @@
 
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX_Rd1LdZrSa8tbMnmoznjnD8ad8Sh1NY&callback=initMap"
+      async defer></script>
+
+
 
 </body>
 

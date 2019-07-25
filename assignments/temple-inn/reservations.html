@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites Reservations</title>
+    <meta name="description" content="Make Reservations | Temple Inn & Suites | Rome | Wash DC | SLC | San Diego">
+    <link
+        href="https://fonts.googleapis.com/css?family=Amaranth%7CCinzel+Decorative%7CFrank+Ruhl+Libre&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/mediumstyle.css">
+    <link rel="stylesheet" href="css/largestyle.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/redtempleiconsmall.png" alt="temple icon">
+        <div>
+            <h1>Temple Inn & Suites</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="rooms.html">Suites</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <main id="storm-main">
+        <h2>Reserve Your Room Now</h2>
+        <h3 class="storm">Need help or have questions?<br><br>Call 555-567-8900</h3>
+
+        <form method="GET" action="thanks.html" name="stormform">
+            <fieldset>
+                <legend>Your Info</legend>
+                <label class="top">First Name*<input type="text" name="fname" pattern="[A-Za-z] {2, }" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" pattern="[A-Za-z] {2, }" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="youraddress@gmail.com"
+                        required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890"></label>
+                <label class="top">Zipcode*<input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Trip Info</legend>
+                <label class="top">Reservation Date<input type="date" name="s-date"></label>
+                <label class="top">Type of Room
+                    <input list="s-type" name="roomtype">
+                    <datalist id="s-type">
+                        <option value="Deluxe Suite">
+                        <option value="Queen Suite">
+                        <option value="Full Suite">
+                        <option value="Queen Standard">
+                        <option value="Full Standard">
+                    </datalist>
+                </label>
+
+                <label class="top">How many nights? <em>(from 1 to 10) </em><span id="daynumber"> ===> 5</span><input
+                        type="range" min="1" max="10" value="5" step="1" id="dayrange" name="length"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+                <label class="top">Select City
+                    <select name="city">
+                        <option value="">Select Region</option>
+                        <option value="rome">Rome</option>
+                        <option value="sandiego">San Diego</option>
+                        <option value="saltlake">Salt Lake City</option>
+                        <option value="washdc">Washington DC</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do You Have Questions?</legend>
+                <label class="sbs"><input type="radio" name="questions" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="questions" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="questions" value="maybe"> Maybe</label>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea name="comments" rows="10" cols="35"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Reservation" class="s-button" name="s-button">
+
+        </form>
+    </main>
+
+    <aside class="contact">
+            <p>&#9742; 555-567-8900 &#9742;  ---  &#9993; templeinn@gmail.com &#9993;</p>
+        </aside>
+    
+        <footer class="end">
+            <p>Copyright &COPY; 2019 | Temple Inn & Suites | Salt Lake City, UT | <a
+                    href="attributions.html">Attributions</a></p>
+                    <p>Today's date is <span id="currentdate"></span>.</p>
+        </footer>
+    <aside>
+        <div class="social">
+                <p>Stay current on social media!</p>
+            <a href="https://www.facebook.com"><img src="images/fb.png" alt="fb icon"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.instagram.com"><img src="images/insta.png" alt="instagram icon"></a>
+           
+        </div>
+    </aside>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>

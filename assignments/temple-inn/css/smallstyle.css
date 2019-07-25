@@ -7,6 +7,7 @@
 
 body {
     font-size: 16px;
+    padding: 10px;
 }
 
 header img {
@@ -22,13 +23,17 @@ h1 {
 }
 
 h2 {
-    margin: 1.75em 0 .75em;
+    margin: 1.6em 0 .75em;
     font-family: 'Amaranth', Georgia, sans-serif;
 }
 h3 {
     margin: 1.3em 0 0;
     font-family: 'Amaranth', Georgia, sans-serif;
     font-weight: bold;
+}
+h4 {
+    margin: 1em 0 .25em;
+    color: rgba(80, 136, 204, 1);
 }
 
 header {
@@ -97,6 +102,7 @@ main {
     font-size: 1.3rem;
     margin: .15em 0 .6em;
     justify-content: space-around;
+    text-decoration: none;
     
 }
 
@@ -147,9 +153,42 @@ div.subrow {
     font-family: 'Amaranth', Georgia, sans-serif;
 }
 
+.subrow li {
+    list-style: none;
+}
+
+
 .subimg {
     width: 100%;
     height: auto;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.3);
+}
+
+div.subbox1 {
+    /*grid-column: 1;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+div.subbox2 {
+    /*grid-column: 2;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+div.subbox3 {
+    /*grid-column: 3;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.extra {
+    margin-bottom: 25px;
 }
 
 .social {
@@ -160,7 +199,7 @@ div.subrow {
     /*background-color: rgba(124, 252, 255, 0.6);*/
     background-color: rgba(80, 136, 204, .8);
     text-align: center;
-    margin: 5px auto;
+    margin: 0 auto;
     border-radius: 8px;
     color: ghostwhite;
 }
@@ -186,4 +225,157 @@ div.subrow {
     text-align: center;
     margin: auto;
     padding: 5px 0;
+}
+
+table {
+    margin: 5px;
+}
+
+
+
+.forecast {
+    font-family: Righteous, Arial, cursive;
+    font-size: 1.2rem;
+    letter-spacing: .05rem
+}
+
+table,
+td,
+th,
+tr {
+    border-collapse: collapse;
+    border: 2px solid #000;
+    padding: 7px;
+    text-align: center;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .025rem;
+    background-color: rgba(80, 136, 204, .3);
+}
+
+td img {
+    max-width: 50px;
+}
+
+th {
+    background-color: rgba(80, 136, 204, .5);
+    color: ghostwhite;
+}
+
+@media only screen and (max-width: 22em) {
+
+    .table, table {
+        display: none;
+        position: relative;
+        margin: 10px auto;
+    }
+}
+.map {
+    height: 21em;
+    max-width: 21em;
+    border-top: 2px solid #333;
+ }
+
+ #storm-main {
+    width: 100%
+}
+
+.storm {
+    font-size: 1rem
+}
+
+#storm-main h2 {
+    background-color: #2ad4cb;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 2rem 0;
+    max-width: 15rem;
+    text-align: center;
+    letter-spacing: .02rem
+}
+
+h3.storm {
+    letter-spacing: .025rem;
+    font-size: 1.1rem;
+    font-family: serif;
+    padding: .5rem 1.75rem;
+    margin: 2rem 0 2rem 0;
+    text-align: left
+}
+
+form fieldset {
+    margin: 2rem 0 2rem 0;
+    border: 2px solid #7390d1;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 30rem
+}
+
+form legend {
+    color: #4d618d;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.4rem
+}
+
+form div,
+form label.top {
+    display: block;
+    padding: 1rem;
+    color: #4d618d
+}
+
+textarea {
+    width: 95%
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+    margin-right: 5px
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555
+}
+
+label.top select {
+    padding: .75rem 0;
+    text-align: right
+}
+
+#ratingvalue {
+    text-align: right
+}
+
+form input.s-button {
+    border: none;
+    font-size: 1.4rem;
+    font-family: serif;
+    font-weight: 700;
+    background-color: #2ad4cb;
+    color: #000;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 98%;
+    max-width: 20rem
+}
+
+form label.top input:required {
+    border-bottom: #2ad4cb dashed 3px
+}
+
+form label.top input:required:valid {
+    border: #2ad4cb solid 2px
 }
