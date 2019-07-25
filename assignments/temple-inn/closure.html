@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Closures</title>
+
+   <style>
+      #closures  {
+         list-style: none;
+      }
+   </style>
+
+</head>
+
+<body>
+
+   <script>
+      const getCitySchedule = async (city) => {
+         const response = await fetch('./city_closures.json');
+         const data = await response.json();
+         console.log(data);
+         targetData = data.filter(item => item.city == city);
+         return targetData[0];
+      }
+
+      const updateUI = (data) => {
+         // destructure properties
+         const { city, closures } = data;
+
+         document.querySelector('.city').innerHTML = city;
+         const ul = document.getElementById('closures');
+
+         for (let i = 0; i < closures.length; i++) {
+            const node = document.createElement("LI");
+            const textNode = document.createTextNode(closures[i]);
+            node.appendChild(textNode);
+            ul.appendChild(node);
+         }
+      }
+
+      // const targetCity = "Salt Lake City";
+      const targetCity = "San Diego";
+
+      // update city with new ui
+      getCitySchedule(targetCity)
+         .then(data => updateUI(data))
+         .catch(err => console.log(err));
+
+   </script>
+</body>
+
+
+<div class="city">Here</div>
+
+<ul id="closures">Closures
+   <!-- dates go here -->
+</ul>
+
+</html>
