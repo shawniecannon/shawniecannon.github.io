@@ -22,7 +22,8 @@ const getCitySchedule = async (city) => {
  }
 
  // const targetCity = "Salt Lake City";
- const targetCity = "San Diego";
+ //const targetCity = "San Diego";
+let targetCity = document.getElementById("cityname").getAttribute("data-id");
 
  // update city with new ui
  getCitySchedule(targetCity)
